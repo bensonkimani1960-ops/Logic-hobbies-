@@ -402,4 +402,252 @@ void setup() {
     pinMode(leds[i], OUTPUT);
   }
 }
-voi
+void loop() {
+  for (int i = 0; i &lt; 4; i++) {
+    digitalWrite(leds[i], HIGH);
+    delay(200);
+    digitalWrite(leds[i], LOW);
+  }
+  for (int i = 3; i &gt;= 0; i--) {
+    digitalWrite(leds[i], HIGH);
+    delay(200);
+    digitalWrite(leds[i], LOW);
+  }
+}</code></pre>
+<p>The LEDs chase forward and then backward like a running light.</p></div>
+
+<div class="card"><h3>Project 6: Traffic Lights</h3>
+<p><strong>Electronics needed:</strong></p>
+<ul><li>Arduino UNO</li><li>1x Red LED, 1x Yellow LED, 1x Green LED</li><li>3x 220 ohm resistors</li><li>Breadboard and jumper wires</li></ul>
+<p><strong>Circuit Diagram:</strong></p>
+<ul><li>Red LED to Pin 8</li><li>Yellow LED to Pin 9</li><li>Green LED to Pin 10</li><li>Each LED through 220 ohm resistor to GND</li></ul>
+<p><strong>Code:</strong></p>
+<pre><code>int redPin = 8;
+int yellowPin = 9;
+int greenPin = 10;
+void setup() {
+  pinMode(redPin, OUTPUT);
+  pinMode(yellowPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+}
+void loop() {
+  digitalWrite(greenPin, HIGH);
+  delay(5000);
+  digitalWrite(greenPin, LOW);
+  digitalWrite(yellowPin, HIGH);
+  delay(2000);
+  digitalWrite(yellowPin, LOW);
+  digitalWrite(redPin, HIGH);
+  delay(5000);
+  digitalWrite(redPin, LOW);
+}</code></pre>
+<p>Green = GO for 5 seconds, Yellow = GET READY for 2 seconds, Red = STOP for 5 seconds.</p></div>
+
+</section>
+<!-- END OF PART 1 - PASTE PART 2 BELOW THIS LINE -->
+
+
+<section id="web">
+<h2>Web Development - How Websites Are Made</h2>
+
+<div class="card">
+<h3>What is Web Development?</h3>
+<p>Web Development is building websites like this one — BEN LOGIC. Every website you see on your phone is made from 3 main languages working together: HTML, CSS, and JavaScript.</p>
+<p>Think of it like building a house:</p>
+<ul>
+<li><strong>HTML = The Structure / Bricks</strong> — Walls, doors, rooms</li>
+<li><strong>CSS = The Paint / Design</strong> — Colours, size, beauty</li>
+<li><strong>JavaScript = The Electricity / Brain</strong> — Lights, buttons, actions</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>1. HTML - HyperText Markup Language</h3>
+<p><strong>What it does:</strong> HTML creates the content and structure. Text, headings, images, buttons, links, videos.</p>
+<p>Without HTML, a website would be blank.</p>
+<p><strong>Example:</strong></p>
+<pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;This is my first website&lt;/p&gt;
+&lt;button&gt;Click Me&lt;/button&gt;
+&lt;img src="my-photo.jpg"&gt;</code></pre>
+<p><strong>Important HTML tags:</strong></p>
+<ul>
+<li><code>&lt;h1&gt; to &lt;h6&gt;</code> = Headings, big to small</li>
+<li><code>&lt;p&gt;</code> = Paragraph, normal text</li>
+<li><code>&lt;img&gt;</code> = Image</li>
+<li><code>&lt;a&gt;</code> = Link to another page</li>
+<li><code>&lt;button&gt;</code> = Clickable button</li>
+<li><code>&lt;div&gt;</code> = Box to hold things together</li>
+<li><code>&lt;section&gt;</code> = A part of the page, like Arduino section</li>
+</ul>
+<p>This BEN LOGIC website is mostly HTML. Every section you see — RC, Arduino, Yo-Yo — is an HTML section.</p>
+</div>
+
+<div class="card">
+<h3>2. CSS - Cascading Style Sheets</h3>
+<p><strong>What it does:</strong> CSS makes the website beautiful. Colours, fonts, sizes, spacing, dark mode / light mode, cards, shadows.</p>
+<p>Without CSS, a website would look like plain black text on white paper. No colours, no boxes.</p>
+<p><strong>Example:</strong></p>
+<pre><code>body {
+  background: #101827;
+  color: white;
+}
+
+h2 {
+  color: #00d5ff;
+}
+
+.card {
+  background: #1c293c;
+  padding: 22px;
+  border-radius: 12px;
+}</code></pre>
+<p><strong>What this CSS means:</strong></p>
+<ul>
+<li><code>background</code> = Background colour</li>
+<li><code>color</code> = Text colour</li>
+<li><code>padding</code> = Space inside the box</li>
+<li><code>border-radius</code> = Rounded corners</li>
+</ul>
+<p>In this website, the blue cards, the dark background, and the blue headings are all CSS.</p>
+</div>
+
+<div class="card">
+<h3>3. JavaScript - The Brain</h3>
+<p><strong>What it does:</strong> JavaScript makes the website do things. When you click a button and something happens, that is JavaScript.</p>
+<p>Without JavaScript, a website is just a poster. It looks nice but does nothing.</p>
+<p><strong>Example:</strong></p>
+<pre><code>function sayHello() {
+  alert("Hello! Welcome to BEN LOGIC");
+}</code></pre>
+<p><strong>JavaScript in this website:</strong></p>
+<ul>
+<li><strong>Switch Theme button</strong> = JavaScript changes dark mode to light mode</li>
+<li><strong>MENU button on phone</strong> = JavaScript opens and closes the menu</li>
+<li><strong>Journal</strong> = JavaScript saves what you type</li>
+<li><strong>Search / Filter</strong> = JavaScript shows and hides things</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>How They Work Together</h3>
+<pre><code>&lt;!-- HTML: The Button --&gt;
+&lt;button onclick="sayHello()"&gt;Click Me&lt;/button&gt;
+
+&lt;!-- CSS: The Style --&gt;
+button {
+  background: #00d5ff;
+  padding: 11px 16px;
+  border-radius: 7px;
+}
+
+&lt;!-- JavaScript: The Action --&gt;
+function sayHello() {
+  alert("You clicked the button!");
+}</code></pre>
+<p><strong>HTML</strong> makes the button → <strong>CSS</strong> makes it blue and round → <strong>JavaScript</strong> makes it talk when you click it.</p>
+</div>
+
+<h3>My Web Development Journey</h3>
+<div class="grid">
+<div class="card"><h3>Level 1: HTML</h3><p>I learned to create headings, paragraphs, images and sections.</p></div>
+<div class="card"><h3>Level 2: CSS</h3><p>I learned to add colours, cards, and make it look good on phone and computer.</p></div>
+<div class="card"><h3>Level 3: JavaScript</h3><p>I learned to add theme switch, menu, and interactive journal.</p></div>
+<div class="card"><h3>Level 4: Projects</h3><p>Now I build full websites like BEN LOGIC and add my Arduino + RC projects to them.</p></div>
+</div>
+
+<div class="note"><strong>My goal:</strong> Use web development to show my inventions to the world — not just build them, but share them.</div>
+</section>
+
+<section id="yoyo">
+<h2>Yo-Yo</h2>
+<div class="card"><h3>What is Yo-Yo?</h3><p>Yo-Yo is a skill toy. You throw it down, it spins, and you bring it back with tricks. It improves focus, hand control and patience.</p></div>
+<div class="grid">
+<div class="card"><h3>Beginner Tricks</h3><ul><li>Sleeper</li><li>Walk the Dog</li><li>Forward Pass</li></ul></div>
+<div class="card"><h3>Intermediate Tricks</h3><ul><li>Rock the Baby</li><li>Eiffel Tower</li><li>Brain Twister</li></ul></div>
+<div class="card"><h3>Advanced Tricks</h3><ul><li>Trapeze</li><li>Double or Nothing</li><li>Bind Return</li></ul></div>
+</div>
+<div class="card"><h3>Types of Yo-Yos</h3><ul><li><strong>Responsive:</strong> Comes back with a tug. Best for beginners.</li><li><strong>Unresponsive:</strong> Spins longer. Needs a Bind to return. Best for advanced tricks.</li></ul></div>
+</section>
+
+<section id="coding">
+<h2>Coding</h2>
+<div class="card"><h3>What is Coding?</h3><p>Coding is giving instructions to a computer. You write the instructions in a language the computer understands.</p></div>
+<div class="grid">
+<div class="card"><h3>Python</h3><p>Easy to learn. Good for games, apps, and AI.</p><pre><code>print("Hello BEN LOGIC")</code></pre></div>
+<div class="card"><h3>HTML + CSS</h3><p>For building websites.</p><pre><code>&lt;h1&gt;My Website&lt;/h1&gt;</code></pre></div>
+<div class="card"><h3>JavaScript</h3><p>For making websites interactive.</p><pre><code>alert("Hello!")</code></pre></div>
+<div class="card"><h3>Arduino C++</h3><p>For controlling electronics, motors and sensors.</p><pre><code>digitalWrite(13, HIGH);</code></pre></div>
+</div>
+</section>
+
+<section id="research">
+<h2>Research</h2>
+<div class="card"><h3>My Research Topics</h3><ul><li>How Bluetooth controls robots</li><li>How sensors help robots see the world</li><li>How to make RC cars faster and smarter</li><li>How websites and apps are built</li></ul></div>
+<div class="card"><h3>What I Want To Invent</h3><p>A smart RC car that can avoid obstacles by itself, follow a line, and be controlled from a phone.</p></div>
+</section>
+
+<section id="journal">
+<h2>My Journal</h2>
+<div class="card"><p>Write your ideas, experiments and progress here. It is saved on this device.</p>
+<input type="text" id="journalTitle" placeholder="Title...">
+<textarea id="journalText" rows="4" placeholder="Write your journal entry..."></textarea>
+<button onclick="saveJournal()">Save Entry</button>
+<button onclick="clearJournal()">Clear All</button>
+<div id="journalList"></div>
+</div>
+</section>
+
+</main>
+<footer>
+<p>© 2026 BEN LOGIC | Hobby & Research Hub</p>
+<p class="small">Built with HTML, CSS and JavaScript. Arduino, RC Engineering, Yo-Yo, Coding & Research.</p>
+</footer>
+
+<script>
+function toggleTheme(){
+  document.body.classList.toggle('light');
+  const isLight = document.body.classList.contains('light');
+  localStorage.setItem('benlogic-theme', isLight ? 'light' : 'dark');
+  document.getElementById('themeButton').textContent = isLight ? 'Switch to Dark' : 'Switch Theme';
+}
+function toggleMenu(){
+  const nav = document.getElementById('navigation');
+  nav.classList.toggle('open');
+}
+document.addEventListener('click', function(e){
+  const nav = document.getElementById('navigation');
+  if(window.innerWidth <= 650 && nav.classList.contains('open') && !e.target.closest('#navigation')){
+    nav.classList.remove('open');
+  }
+});
+function saveJournal(){
+  const title = document.getElementById('journalTitle').value.trim();
+  const text = document.getElementById('journalText').value.trim();
+  if(!title && !text){ alert('Write something first!'); return; }
+  let entries = JSON.parse(localStorage.getItem('benlogic-journal') || '[]');
+  entries.unshift({title: title || 'Untitled', text: text, date: new Date().toLocaleString()});
+  localStorage.setItem('benlogic-journal', JSON.stringify(entries));
+  document.getElementById('journalTitle').value = '';
+  document.getElementById('journalText').value = '';
+  displayJournal();
+}
+function displayJournal(){
+  const list = document.getElementById('journalList');
+  let entries = JSON.parse(localStorage.getItem('benlogic-journal') || '[]');
+  if(entries.length === 0){ list.innerHTML = '<p class="empty">No entries yet. Write your first one!</p>'; return; }
+  list.innerHTML = entries.map(function(e){
+    return '<div class="journal-entry card"><h3>'+e.title+'</h3><p class="small">'+e.date+'</p><p>'+e.text+'</p></div>';
+  }).join('');
+}
+function clearJournal(){
+  if(confirm('Delete all journal entries?')){ localStorage.removeItem('benlogic-journal'); displayJournal(); }
+}
+window.onload = function(){
+  const savedTheme = localStorage.getItem('benlogic-theme');
+  if(savedTheme === 'light'){ document.body.classList.add('light'); document.getElementById('themeButton').textContent = 'Switch to Dark'; }
+  displayJournal();
+};
+</script>
+</body>
+</html>
