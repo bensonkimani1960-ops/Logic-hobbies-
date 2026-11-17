@@ -573,16 +573,681 @@ function sayHello() {
 <div class="note"><strong>My goal:</strong> Use web development to show my inventions to the world — not just build them, but share them.</div>
 </section>
 
-<section id="yoyo">
-<h2>Yo-Yo</h2>
-<div class="card"><h3>What is Yo-Yo?</h3><p>Yo-Yo is a skill toy. You throw it down, it spins, and you bring it back with tricks. It improves focus, hand control and patience.</p></div>
-<div class="grid">
-<div class="card"><h3>Beginner Tricks</h3><ul><li>Sleeper</li><li>Walk the Dog</li><li>Forward Pass</li></ul></div>
-<div class="card"><h3>Intermediate Tricks</h3><ul><li>Rock the Baby</li><li>Eiffel Tower</li><li>Brain Twister</li></ul></div>
-<div class="card"><h3>Advanced Tricks</h3><ul><li>Trapeze</li><li>Double or Nothing</li><li>Bind Return</li></ul></div>
+
+
+  
+<!-- ==========================================
+ BEN LOGIC - YO-YO KNOWLEDGE & LEARNING
+=========================================== -->
+
+<section id="yoyo-learning" class="yoyo-section">
+
+<style>
+.yoyo-section {
+  --bg:#101827;
+  --card:#1c293c;
+  --text:#ffffff;
+  --muted:#b8c5d6;
+  --accent:#00d5ff;
+  background:var(--bg);
+  color:var(--text);
+  padding:50px 5%;
+  font-family:Arial,sans-serif;
+  line-height:1.7;
+  box-sizing:border-box;
+}
+.yoyo-section * {box-sizing:border-box;}
+.yoyo-section h1,.yoyo-section h2,.yoyo-section h3 {
+  line-height:1.3;
+}
+.yoyo-section h1 {
+  color:var(--accent);
+  font-size:clamp(30px,5vw,46px);
+  text-align:center;
+}
+.yoyo-section h2 {
+  color:var(--accent);
+  margin-bottom:18px;
+}
+.yoyo-section h3 {color:var(--accent);}
+.yoyo-section p,.yoyo-section li {color:var(--muted);}
+.yoyo-section a {color:var(--accent);}
+.yoyo-section .intro {
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+.yoyo-section .block {
+  max-width:1200px;
+  margin:45px auto;
+}
+.yoyo-section .grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));
+  gap:18px;
+}
+.yoyo-section .card {
+  background:var(--card);
+  border:1px solid #30435b;
+  border-radius:14px;
+  padding:20px;
+  transition:.25s;
+  min-width:0;
+}
+.yoyo-section .card:hover {
+  transform:translateY(-4px);
+  border-color:var(--accent);
+}
+.yoyo-section .card h3 {margin-top:5px;}
+.yoyo-section .badge {
+  display:inline-block;
+  background:#07394a;
+  color:var(--accent);
+  border-radius:20px;
+  padding:4px 12px;
+  font-size:12px;
+  margin-bottom:10px;
+}
+.yoyo-section .note {
+  background:var(--card);
+  border-left:4px solid var(--accent);
+  padding:15px;
+  border-radius:7px;
+  margin:20px 0;
+  color:var(--muted);
+}
+.yoyo-section .table-wrap {overflow-x:auto;}
+.yoyo-section table {
+  width:100%;
+  min-width:430px;
+  border-collapse:collapse;
+  background:var(--card);
+}
+.yoyo-section th,.yoyo-section td {
+  border:1px solid #35445a;
+  padding:12px;
+  text-align:left;
+}
+.yoyo-section th {color:var(--accent);}
+.yoyo-section td {color:var(--muted);}
+.yoyo-section button {
+  background:var(--accent);
+  color:#071522;
+  border:0;
+  border-radius:8px;
+  padding:12px 22px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.yoyo-section button:hover {opacity:.85;}
+.yoyo-section .question {
+  background:var(--card);
+  border-radius:12px;
+  padding:18px;
+  margin:18px 0;
+}
+.yoyo-section .question label {
+  display:block;
+  color:var(--muted);
+  margin:9px 0;
+  cursor:pointer;
+}
+.yoyo-section .result {
+  display:none;
+  padding:18px;
+  background:#07394a;
+  border-radius:10px;
+  margin-top:20px;
+}
+@media(max-width:600px) {
+  .yoyo-section {padding:35px 16px;}
+}
+</style>
+
+<!-- INTRODUCTION -->
+<div class="intro">
+  <span class="badge">BEN LOGIC RESEARCH HUB</span>
+  <h1>YO-YO KNOWLEDGE & LEARNING</h1>
+  <p>
+    Explore the science, engineering, brands, components,
+    strings, techniques and skills behind the fascinating
+    world of yo-yos.
+  </p>
+  <p>
+    Learn from beginner knowledge to advanced yo-yo
+    performance and freestyle.
+  </p>
 </div>
-<div class="card"><h3>Types of Yo-Yos</h3><ul><li><strong>Responsive:</strong> Comes back with a tug. Best for beginners.</li><li><strong>Unresponsive:</strong> Spins longer. Needs a Bind to return. Best for advanced tricks.</li></ul></div>
+
+<!-- 01 INTRODUCTION -->
+<div class="block">
+<h2>01. Introduction to Yo-Yos</h2>
+<p>
+A yo-yo is a toy and skill instrument consisting of two
+connected discs with an axle in the middle and a string
+attached around the axle.
+</p>
+<p>
+When thrown downwards, the string unwinds and causes
+the yo-yo to spin. The player controls the movement
+using the string and performs different tricks.
+</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>Throw</h3>
+    <p>Sending the yo-yo downwards using controlled movement.</p>
+  </div>
+  <div class="card">
+    <h3>Sleep</h3>
+    <p>When the yo-yo spins at the end of the string.</p>
+  </div>
+  <div class="card">
+    <h3>Bind</h3>
+    <p>A technique used to return an unresponsive yo-yo.</p>
+  </div>
+  <div class="card">
+    <h3>Mount</h3>
+    <p>A position where the yo-yo rests on sections of string.</p>
+  </div>
+</div>
+</div>
+
+<!-- 02 BRANDS -->
+<div class="block">
+<h2>02. Popular Yo-Yo Brands</h2>
+<p>
+Different manufacturers produce yo-yos with different
+designs, materials, bearings and performance features.
+</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>YoYoFactory</h3>
+    <p>Known for professional performance yo-yos.</p>
+    <p>Popular model: Shutter.</p>
+    <a href="https://yoyofactory.com/" target="_blank">Official Website</a>
+  </div>
+
+  <div class="card">
+    <h3>MagicYoyo</h3>
+    <p>Known for affordable plastic and metal yo-yos.</p>
+    <p>Popular models: K2 Crystal, N12 and Y01 Node.</p>
+    <a href="https://magicyoyo.com/" target="_blank">Official Website</a>
+  </div>
+
+  <div class="card">
+    <h3>Duncan</h3>
+    <p>A historic manufacturer of traditional and modern yo-yos.</p>
+    <p>Popular model: Butterfly XT.</p>
+    <a href="https://www.yoyoduncan.com/" target="_blank">Official Website</a>
+  </div>
+
+  <div class="card">
+    <h3>Offset YoYo</h3>
+    <p>Modern designs for freestyle and string tricks.</p>
+    <p>Popular model: Cheatcode.</p>
+  </div>
+
+  <div class="card">
+    <h3>C3yoyodesign</h3>
+    <p>Known for competitive yo-yo performance designs.</p>
+  </div>
+
+  <div class="card">
+    <h3>One Drop</h3>
+    <p>Produces precision-oriented metal yo-yos.</p>
+  </div>
+
+  <div class="card">
+    <h3>Turning Point</h3>
+    <p>Japanese manufacturer known for high-performance yo-yos.</p>
+  </div>
+
+  <div class="card">
+    <h3>iYoYo</h3>
+    <p>Produces modern performance yo-yos.</p>
+  </div>
+</div>
+</div>
+
+<!-- 03 PARTS -->
+<div class="block">
+<h2>03. Parts of a Yo-Yo</h2>
+<p>
+Understanding the construction of a yo-yo helps explain
+how it spins, sleeps, responds and performs tricks.
+</p>
+
+<div class="note">
+<strong>Engineering note:</strong>
+The body, axle, bearing, response system and string
+work together to control yo-yo performance.
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h3>1. Body</h3>
+    <p>The two outer halves of the yo-yo. Provides structure, mass and stability.</p>
+  </div>
+  <div class="card">
+    <h3>2. Axle</h3>
+    <p>The central shaft connecting the two halves and supporting the spinning assembly.</p>
+  </div>
+  <div class="card">
+    <h3>3. Bearing</h3>
+    <p>Reduces friction and allows the yo-yo to spin freely.</p>
+  </div>
+  <div class="card">
+    <h3>4. Response Pads</h3>
+    <p>Rubber or silicone rings that help the string engage with the yo-yo.</p>
+  </div>
+  <div class="card">
+    <h3>5. Hub</h3>
+    <p>The central region that houses and supports central components.</p>
+  </div>
+  <div class="card">
+    <h3>6. String</h3>
+    <p>Connects the yo-yo to the player's finger and controls trick movements.</p>
+  </div>
+  <div class="card">
+    <h3>7. Spacers</h3>
+    <p>Components found in some designs to control spacing and construction.</p>
+  </div>
+  <div class="card">
+    <h3>8. Side Effects</h3>
+    <p>Removable components used in certain designs to change weight distribution and appearance.</p>
+  </div>
+</div>
+</div>
+
+<!-- 04 STRINGS -->
+<div class="block">
+<h2>04. Yo-Yo Strings</h2>
+<p>
+Strings are essential for controlling the yo-yo.
+Their materials, thickness and construction affect
+performance and feel.
+</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>Polyester</h3>
+    <p>Common, affordable and suitable for everyday practice.</p>
+  </div>
+  <div class="card">
+    <h3>Cotton</h3>
+    <p>Traditional material used in older and some looping yo-yos.</p>
+  </div>
+  <div class="card">
+    <h3>Nylon</h3>
+    <p>Offers a different feel and can provide good durability.</p>
+  </div>
+  <div class="card">
+    <h3>Blended Strings</h3>
+    <p>Combine fibres to balance different performance properties.</p>
+  </div>
+</div>
+
+<h3>Parts of a String</h3>
+<ul>
+  <li>Finger loop – attaches the string to your finger.</li>
+  <li>Slip knot – secures the finger loop.</li>
+  <li>String body – the main working length.</li>
+  <li>Tail – the end of the string.</li>
+</ul>
+
+<div class="note">
+Replace worn or damaged strings regularly.
+Always use a string appropriate for your yo-yo.
+</div>
+</div>
+
+<!-- 05 SHAPES -->
+<div class="block">
+<h2>05. Yo-Yo Shapes</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Butterfly</h3>
+    <p>Wide catch zone, commonly used for string tricks.</p>
+  </div>
+  <div class="card">
+    <h3>Imperial</h3>
+    <p>Narrow gap design traditionally associated with looping.</p>
+  </div>
+  <div class="card">
+    <h3>H-Shape</h3>
+    <p>Broad profile used in modern performance designs.</p>
+  </div>
+  <div class="card">
+    <h3>Organic</h3>
+    <p>Rounded shape with a traditional feel.</p>
+  </div>
+  <div class="card">
+    <h3>V-Shape</h3>
+    <p>Angular design often used in string-trick yo-yos.</p>
+  </div>
+  <div class="card">
+    <h3>W-Shape</h3>
+    <p>Multiple contours for different design characteristics.</p>
+  </div>
+</div>
+</div>
+
+<!-- 06 SKILL LEVELS -->
+<div class="block">
+<h2>06. Levels of Yo-Yo Skills</h2>
+<div class="grid">
+  <div class="card">
+    <span class="badge">LEVEL 1</span>
+    <h3>Beginner</h3>
+    <ul>
+      <li>Basic throw</li>
+      <li>Gravity pull</li>
+      <li>Sleeper</li>
+      <li>Forward pass</li>
+      <li>Walk the dog</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">LEVEL 2</span>
+    <h3>Elementary</h3>
+    <ul>
+      <li>Rock the baby</li>
+      <li>Around the world</li>
+      <li>Elevator</li>
+      <li>Brain twister</li>
+      <li>Trapeze</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">LEVEL 3</span>
+    <h3>Intermediate</h3>
+    <ul>
+      <li>Double or Nothing</li>
+      <li>Split Bottom Mount</li>
+      <li>Mach 5</li>
+      <li>Cold Fusion</li>
+      <li>Barrel Rolls</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">LEVEL 4</span>
+    <h3>Advanced</h3>
+    <ul>
+      <li>Slack tricks</li>
+      <li>Whips</li>
+      <li>Horizontal tricks</li>
+      <li>Regenerations</li>
+      <li>Complex combinations</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">LEVEL 5</span>
+    <h3>Professional</h3>
+    <ul>
+      <li>Freestyle routines</li>
+      <li>Technical combinations</li>
+      <li>Advanced horizontal tricks</li>
+      <li>Original tricks</li>
+      <li>Competition performance</li>
+    </ul>
+  </div>
+</div>
+<p>These are suggested learning stages, not official international grades.</p>
+</div>
+
+<!-- 07 RESPONSIVE -->
+<div class="block">
+<h2>07. Responsive vs Unresponsive Yo-Yos</h2>
+<div class="grid">
+  <div class="card">
+    <span class="badge">BEGINNER FRIENDLY</span>
+    <h3>Responsive Yo-Yo</h3>
+    <ul>
+      <li>Returns when the string is tugged.</li>
+      <li>Usually easier to learn.</li>
+      <li>Suitable for basic tricks.</li>
+      <li>Often uses a narrower bearing gap.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <span class="badge">ADVANCED PLAY</span>
+    <h3>Unresponsive Yo-Yo</h3>
+    <ul>
+      <li>Does not normally return with a simple tug.</li>
+      <li>Requires a bind.</li>
+      <li>Suitable for advanced string tricks.</li>
+      <li>Often uses a wider bearing gap.</li>
+    </ul>
+  </div>
+</div>
+<h3>Understanding a Bind</h3>
+<p>
+A bind is a technique where a section of string is fed
+into the yo-yo gap, engaging the response system and
+making the yo-yo return to the hand.
+</p>
+</div>
+
+<!-- 08 COMPETITIVE DIVISIONS -->
+<div class="block">
+<h2>08. Five Competitive Yo-Yo Divisions</h2>
+<div class="grid">
+  <div class="card">
+    <h3>1A – Single Yo-Yo</h3>
+    <p>One unresponsive yo-yo used for string tricks.</p>
+  </div>
+  <div class="card">
+    <h3>2A – Two Yo-Yos</h3>
+    <p>Two responsive yo-yos used for looping tricks.</p>
+  </div>
+  <div class="card">
+    <h3>3A – Two String Yo-Yos</h3>
+    <p>Two unresponsive yo-yos used for complex string tricks.</p>
+  </div>
+  <div class="card">
+    <h3>4A – Offstring</h3>
+    <p>The yo-yo is not attached to the string and is thrown and caught.</p>
+  </div>
+  <div class="card">
+    <h3>5A – Counterweight</h3>
+    <p>A counterweight replaces the finger attachment on the string.</p>
+  </div>
+</div>
+</div>
+
+<!-- 09 MATERIALS -->
+<div class="block">
+<h2>09. Yo-Yo Materials</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Material</th><th>Characteristics</th></tr>
+<tr><td>Plastic</td><td>Affordable and lightweight.</td></tr>
+<tr><td>Aluminium</td><td>Lightweight, strong and popular for performance.</td></tr>
+<tr><td>Stainless Steel</td><td>Dense and relatively heavy.</td></tr>
+<tr><td>Titanium</td><td>Premium, strong and expensive.</td></tr>
+<tr><td>Bi-metal</td><td>Combines two metals for weight distribution.</td></tr>
+</table>
+</div>
+</div>
+
+<!-- 10 MAINTENANCE -->
+<div class="block">
+<h2>10. Yo-Yo Maintenance and Care</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Bearing Care</h3>
+    <ul>
+      <li>Keep bearings clean.</li>
+      <li>Remove dirt and dust.</li>
+      <li>Use suitable lubricant when required.</li>
+      <li>Avoid excessive lubrication.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>String Care</h3>
+    <ul>
+      <li>Replace worn strings.</li>
+      <li>Avoid wet or dirty strings.</li>
+      <li>Store spare strings properly.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Body Care</h3>
+    <ul>
+      <li>Keep the yo-yo clean.</li>
+      <li>Avoid hard impacts.</li>
+      <li>Check for cracks.</li>
+      <li>Inspect response pads.</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- 11 PERFORMANCE -->
+<div class="block">
+<h2>11. Yo-Yo Performance Terms</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Term</th><th>Meaning</th></tr>
+<tr><td>Spin time</td><td>How long a yo-yo spins.</td></tr>
+<tr><td>Stability</td><td>Ability to maintain its spinning direction.</td></tr>
+<tr><td>Weight distribution</td><td>How weight is arranged in the yo-yo.</td></tr>
+<tr><td>Catch zone</td><td>Area where the string lands.</td></tr>
+<tr><td>Gap width</td><td>Distance between the two halves.</td></tr>
+<tr><td>Rim weight</td><td>Weight concentrated near the outer edges.</td></tr>
+<tr><td>Vibration</td><td>Shaking during spinning.</td></tr>
+<tr><td>Grind</td><td>A trick where the yo-yo slides on a surface.</td></tr>
+<tr><td>Response system</td><td>Mechanism controlling return.</td></tr>
+<tr><td>Bind</td><td>Technique for returning an unresponsive yo-yo.</td></tr>
+</table>
+</div>
+</div>
+
+<!-- 12 QUIZ -->
+<div class="block" id="yoyo-quiz">
+<h2>12. Test Your Yo-Yo Knowledge</h2>
+<p>Answer the following questions to test what you have learned.</p>
+
+<form id="yyQuiz">
+
+<div class="question">
+<strong>1. Which component allows a yo-yo to spin with reduced friction?</strong>
+<label><input type="radio" name="q1" value="a"> Response pad</label>
+<label><input type="radio" name="q1" value="b"> Bearing</label>
+<label><input type="radio" name="q1" value="c"> String</label>
+</div>
+
+<div class="question">
+<strong>2. What is a bind used for?</strong>
+<label><input type="radio" name="q2" value="a"> Increase weight</label>
+<label><input type="radio" name="q2" value="b"> Change colour</label>
+<label><input type="radio" name="q2" value="c"> Return an unresponsive yo-yo</label>
+</div>
+
+<div class="question">
+<strong>3. Which division uses two looping yo-yos?</strong>
+<label><input type="radio" name="q3" value="a"> 1A</label>
+<label><input type="radio" name="q3" value="b"> 2A</label>
+<label><input type="radio" name="q3" value="c"> 4A</label>
+</div>
+
+<div class="question">
+<strong>4. Which material is commonly used in performance yo-yos?</strong>
+<label><input type="radio" name="q4" value="a"> Aluminium</label>
+<label><input type="radio" name="q4" value="b"> Paper</label>
+<label><input type="radio" name="q4" value="c"> Cardboard</label>
+</div>
+
+<div class="question">
+<strong>5. What does sleep mean?</strong>
+<label><input type="radio" name="q5" value="a"> The yo-yo stops moving</label>
+<label><input type="radio" name="q5" value="b"> The yo-yo spins at the end of the string</label>
+<label><input type="radio" name="q5" value="c"> The yo-yo returns</label>
+</div>
+
+<button type="submit">Submit Answers</button>
+<button type="reset" style="margin-left:8px;">Try Again</button>
+
+<div class="result" id="yyResult" role="status" aria-live="polite"></div>
+</form>
+</div>
+
+<!-- CONCLUSION -->
+<div class="block">
+<h2>13. Conclusion</h2>
+<p>
+Yo-yoing combines creativity, physics, engineering,
+coordination and skill. Understanding the parts,
+materials, strings and performance characteristics
+helps players become better and more knowledgeable.
+</p>
+
+<div class="note">
+<strong>BEN LOGIC RESEARCH HUB:</strong>
+Learn. Experiment. Practise. Innovate.
+</div>
+</div>
+
+<script>
+(function(){
+  const form = document.getElementById("yyQuiz");
+  const result = document.getElementById("yyResult");
+
+  if(!form || form.dataset.ready) return;
+  form.dataset.ready = "true";
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const answers = {
+      q1:"b",
+      q2:"c",
+      q3:"b",
+      q4:"a",
+      q5:"b"
+    };
+
+    let score = 0;
+    let unanswered = 0;
+
+    Object.keys(answers).forEach(function(key){
+      const selected = form.querySelector(
+        'input[name="' + key + '"]:checked'
+      );
+
+      if(!selected){
+        unanswered++;
+      } else if(selected.value === answers[key]){
+        score++;
+      }
+    });
+
+    if(unanswered > 0){
+      result.style.display = "block";
+      result.textContent =
+        "Please answer all five questions before submitting.";
+      return;
+    }
+
+    result.style.display = "block";
+    result.textContent =
+      "Your score: " + score + "/5. " +
+      (score === 5 ? "Excellent work!" :
+       score >= 3 ? "Good job! Keep learning." :
+       "Keep practising and review the notes.");
+  });
+
+  form.addEventListener("reset", function(){
+    result.style.display = "none";
+  });
+})();
+</script>
+
 </section>
+  
+
 
     <h3>My Yo-Yo Charts</h3>
 
