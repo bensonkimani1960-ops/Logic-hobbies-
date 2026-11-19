@@ -1912,260 +1912,397 @@ arduino.close()</code></pre>
 </div>
 
 <!-- EXAMINATION -->
-<div id="python-exam">
-<h2>15. Python Coding Examination</h2>
-<div class="card">
-  <p>
-    Test your understanding of Python with these 15
-    multiple-choice questions. Select one answer for
-    each question, then submit to see your results.
+  
+
+</section>
+
+  
+<section id="python-quiz">
+<style>
+#python-quiz {
+  background: #101827;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 24px;
+  border-radius: 14px;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+#python-quiz * {
+  box-sizing: border-box;
+}
+#python-quiz h2 {
+  color: #00d5ff;
+}
+#python-quiz .quiz-card {
+  background: #1c293c;
+  border: 1px solid #34445c;
+  padding: 17px;
+  border-radius: 11px;
+  margin: 15px 0;
+}
+#python-quiz .quiz-question {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+#python-quiz .quiz-option {
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+  background: #142438;
+  border: 1px solid #34445c;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #dce8f5;
+}
+#python-quiz .quiz-option:hover {
+  border-color: #00d5ff;
+}
+#python-quiz .quiz-option input {
+  margin-right: 9px;
+  accent-color: #00d5ff;
+}
+#python-quiz .correct-answer {
+  border: 2px solid #26d98b;
+  background: #123a30;
+}
+#python-quiz .wrong-answer {
+  border: 2px solid #ff6565;
+  background: #421f2a;
+}
+#python-quiz .quiz-button {
+  background: #00d5ff;
+  color: #06121d;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px 5px 8px 0;
+}
+#python-quiz .quiz-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+#python-quiz .quiz-progress {
+  background: #34445c;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+#python-quiz .quiz-progress-bar {
+  background: #00d5ff;
+  height: 100%;
+  width: 0%;
+  transition: width .3s;
+}
+#python-quiz #quiz-result {
+  background: #142438;
+  border: 1px solid #00d5ff;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 20px;
+  display: none;
+}
+#python-quiz .quiz-muted {
+  color: #b9c5d6;
+}
+@media(max-width:600px) {
+  #python-quiz {
+    padding: 13px;
+  }
+}
+</style>
+
+<div class="quiz-card">
+  <h2>15. Python Programming Quiz</h2>
+  <p class="quiz-muted">
+    Test what you have learned. Select one answer for every question,
+    then submit your answers to see your score.
   </p>
-  <div id="python-progress" class="note">
-    Questions answered: 0 / 15
+
+  <p id="quiz-progress-text">Answered: 0 / 15</p>
+  <div class="quiz-progress">
+    <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
   </div>
-  <div id="python-questions"></div>
-  <button id="python-submit" type="button" disabled>
-    Submit Examination
+</div>
+
+<div id="python-questions">
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">1. What is Python?</p>
+    <label class="quiz-option"><input type="radio" name="q1" value="0"> A. A computer</label>
+    <label class="quiz-option"><input type="radio" name="q1" value="1"> B. A programming language</label>
+    <label class="quiz-option"><input type="radio" name="q1" value="2"> C. An operating system</label>
+    <label class="quiz-option"><input type="radio" name="q1" value="3"> D. A web browser</label>
+  </div>
+
+  <div class="quiz-card" data-answer="2">
+    <p class="quiz-question">2. Who created Python?</p>
+    <label class="quiz-option"><input type="radio" name="q2" value="0"> A. Bill Gates</label>
+    <label class="quiz-option"><input type="radio" name="q2" value="1"> B. Steve Jobs</label>
+    <label class="quiz-option"><input type="radio" name="q2" value="2"> C. Guido van Rossum</label>
+    <label class="quiz-option"><input type="radio" name="q2" value="3"> D. Mark Zuckerberg</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">3. Which command displays information on the screen?</p>
+    <label class="quiz-option"><input type="radio" name="q3" value="0"> A. input()</label>
+    <label class="quiz-option"><input type="radio" name="q3" value="1"> B. print()</label>
+    <label class="quiz-option"><input type="radio" name="q3" value="2"> C. show()</label>
+    <label class="quiz-option"><input type="radio" name="q3" value="3"> D. display()</label>
+  </div>
+
+  <div class="quiz-card" data-answer="0">
+    <p class="quiz-question">4. What is a variable?</p>
+    <label class="quiz-option"><input type="radio" name="q4" value="0"> A. A named place for storing data</label>
+    <label class="quiz-option"><input type="radio" name="q4" value="1"> B. A computer screen</label>
+    <label class="quiz-option"><input type="radio" name="q4" value="2"> C. A programming error</label>
+    <label class="quiz-option"><input type="radio" name="q4" value="3"> D. A keyboard</label>
+  </div>
+
+  <div class="quiz-card" data-answer="2">
+    <p class="quiz-question">5. Which data type is used for text?</p>
+    <label class="quiz-option"><input type="radio" name="q5" value="0"> A. int</label>
+    <label class="quiz-option"><input type="radio" name="q5" value="1"> B. float</label>
+    <label class="quiz-option"><input type="radio" name="q5" value="2"> C. str</label>
+    <label class="quiz-option"><input type="radio" name="q5" value="3"> D. bool</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">6. Which symbol is used to write a single-line comment?</p>
+    <label class="quiz-option"><input type="radio" name="q6" value="0"> A. //</label>
+    <label class="quiz-option"><input type="radio" name="q6" value="1"> B. #</label>
+    <label class="quiz-option"><input type="radio" name="q6" value="2"> C. **</label>
+    <label class="quiz-option"><input type="radio" name="q6" value="3"> D. %%</label>
+  </div>
+
+  <div class="quiz-card" data-answer="2">
+    <p class="quiz-question">7. Which operator checks whether two values are equal?</p>
+    <label class="quiz-option"><input type="radio" name="q7" value="0"> A. =</label>
+    <label class="quiz-option"><input type="radio" name="q7" value="1"> B. !=</label>
+    <label class="quiz-option"><input type="radio" name="q7" value="2"> C. ==</label>
+    <label class="quiz-option"><input type="radio" name="q7" value="3"> D. &gt;</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">8. Which statement is used for decision making?</p>
+    <label class="quiz-option"><input type="radio" name="q8" value="0"> A. print</label>
+    <label class="quiz-option"><input type="radio" name="q8" value="1"> B. if</label>
+    <label class="quiz-option"><input type="radio" name="q8" value="2"> C. input</label>
+    <label class="quiz-option"><input type="radio" name="q8" value="3"> D. import</label>
+  </div>
+
+  <div class="quiz-card" data-answer="0">
+    <p class="quiz-question">9. What is a loop used for?</p>
+    <label class="quiz-option"><input type="radio" name="q9" value="0"> A. Repeating instructions</label>
+    <label class="quiz-option"><input type="radio" name="q9" value="1"> B. Deleting Python</label>
+    <label class="quiz-option"><input type="radio" name="q9" value="2"> C. Creating a keyboard</label>
+    <label class="quiz-option"><input type="radio" name="q9" value="3"> D. Turning off a computer</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">10. Which loop continues while a condition is true?</p>
+    <label class="quiz-option"><input type="radio" name="q10" value="0"> A. if loop</label>
+    <label class="quiz-option"><input type="radio" name="q10" value="1"> B. while loop</label>
+    <label class="quiz-option"><input type="radio" name="q10" value="2"> C. print loop</label>
+    <label class="quiz-option"><input type="radio" name="q10" value="3"> D. input loop</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">11. What is a function?</p>
+    <label class="quiz-option"><input type="radio" name="q11" value="0"> A. A computer part</label>
+    <label class="quiz-option"><input type="radio" name="q11" value="1"> B. A reusable block of code</label>
+    <label class="quiz-option"><input type="radio" name="q11" value="2"> C. A type of monitor</label>
+    <label class="quiz-option"><input type="radio" name="q11" value="3"> D. A programming language</label>
+  </div>
+
+  <div class="quiz-card" data-answer="2">
+    <p class="quiz-question">12. Which Python structure stores key-value pairs?</p>
+    <label class="quiz-option"><input type="radio" name="q12" value="0"> A. List</label>
+    <label class="quiz-option"><input type="radio" name="q12" value="1"> B. Tuple</label>
+    <label class="quiz-option"><input type="radio" name="q12" value="2"> C. Dictionary</label>
+    <label class="quiz-option"><input type="radio" name="q12" value="3"> D. String</label>
+  </div>
+
+  <div class="quiz-card" data-answer="1">
+    <p class="quiz-question">13. Which structure is used for handling errors?</p>
+    <label class="quiz-option"><input type="radio" name="q13" value="0"> A. for and while</label>
+    <label class="quiz-option"><input type="radio" name="q13" value="1"> B. try and except</label>
+    <label class="quiz-option"><input type="radio" name="q13" value="2"> C. print and input</label>
+    <label class="quiz-option"><input type="radio" name="q13" value="3"> D. class and object</label>
+  </div>
+
+  <div class="quiz-card" data-answer="0">
+    <p class="quiz-question">14. What does OOP stand for?</p>
+    <label class="quiz-option"><input type="radio" name="q14" value="0"> A. Object-Oriented Programming</label>
+    <label class="quiz-option"><input type="radio" name="q14" value="1"> B. Online Operating Program</label>
+    <label class="quiz-option"><input type="radio" name="q14" value="2"> C. Open Office Platform</label>
+    <label class="quiz-option"><input type="radio" name="q14" value="3"> D. Object Output Process</label>
+  </div>
+
+  <div class="quiz-card" data-answer="2">
+    <p class="quiz-question">15. Which library is commonly used for Python game development?</p>
+    <label class="quiz-option"><input type="radio" name="q15" value="0"> A. Pandas</label>
+    <label class="quiz-option"><input type="radio" name="q15" value="1"> B. NumPy</label>
+    <label class="quiz-option"><input type="radio" name="q15" value="2"> C. Pygame</label>
+    <label class="quiz-option"><input type="radio" name="q15" value="3"> D. Django</label>
+  </div>
+
+</div>
+
+<div class="quiz-card">
+  <button type="button" class="quiz-button" id="submit-python-quiz">
+    Submit Answers
   </button>
-  <button id="python-reset" class="secondary" type="button">
+  <button type="button" class="quiz-button" id="reset-python-quiz">
     Reset Quiz
   </button>
-  <div id="python-result" class="result" aria-live="polite">
-    <strong id="python-score"></strong>
-    <h3 id="python-message"></h3>
-    <p id="python-percent"></p>
+
+  <div id="quiz-result" aria-live="polite">
+    <h2>Your Results</h2>
+    <h3 id="quiz-score"></h3>
+    <p id="quiz-feedback"></p>
+    <p class="quiz-muted">
+      Green indicates a correct answer. Red indicates an incorrect answer.
+    </p>
   </div>
-</div>
-</div>
-
-<div class="footer">
-  <h3>BEN LOGIC | RESEARCH & LEARNING</h3>
-  <p>Learn • Practise • Build • Innovate</p>
-  <p>Python Coding Study Section</p>
-</div>
-
 </div>
 
 <script>
-(function() {
-  const root = document.getElementById("python-learning");
-  if (!root || root.dataset.quizReady) return;
+(function () {
+  const root = document.getElementById("python-quiz");
+
+  if (!root || root.dataset.quizReady === "true") {
+    return;
+  }
+
   root.dataset.quizReady = "true";
 
-  const questions = [
-    {
-      q:"What is Python?",
-      o:["An operating system","A programming language","Computer hardware","A web browser"],
-      a:1
-    },
-    {
-      q:"Who created Python?",
-      o:["Bill Gates","Steve Jobs","Guido van Rossum","Mark Zuckerberg"],
-      a:2
-    },
-    {
-      q:"Which function displays information on the screen?",
-      o:["input()","print()","type()","open()"],
-      a:1
-    },
-    {
-      q:"What is a variable in Python?",
-      o:["A storage location for data","A computer screen","A programming error","A web browser"],
-      a:0
-    },
-    {
-      q:"Which data type stores text?",
-      o:["int","float","str","bool"],
-      a:2
-    },
-    {
-      q:"Which symbol is used for a single-line comment?",
-      o:["//","#","@","&"],
-      a:1
-    },
-    {
-      q:"Which operator checks whether two values are equal?",
-      o:["=","+","==","!="],
-      a:2
-    },
-    {
-      q:"Which statement is used for decision-making?",
-      o:["print","if","import","return"],
-      a:1
-    },
-    {
-      q:"What is a loop in Python?",
-      o:["Repeating instructions","Deleting files","A variable","A mathematical symbol"],
-      a:0
-    },
-    {
-      q:"Which loop repeats while a condition is true?",
-      o:["if loop","while loop","class loop","return loop"],
-      a:1
-    },
-    {
-      q:"What is a function?",
-      o:["A computer virus","A reusable block of code","A hardware device","A data type"],
-      a:1
-    },
-    {
-      q:"Which structure stores key-value pairs?",
-      o:["List","Tuple","Dictionary","String"],
-      a:2
-    },
-    {
-      q:"What is the purpose of try-except?",
-      o:["Create websites","Handle errors","Print messages","Create variables"],
-      a:1
-    },
-    {
-      q:"What does OOP stand for?",
-      o:["Object-Oriented Programming","Online Operating Program","Open Output Process","Object Operating Platform"],
-      a:0
-    },
-    {
-      q:"Which library is commonly used for Python games?",
-      o:["Pandas","NumPy","Pygame","Django"],
-      a:2
-    }
-  ];
+  const questions = root.querySelectorAll(
+    "#python-questions .quiz-card"
+  );
 
-  const questionsBox = root.querySelector("#python-questions");
-  const progress = root.querySelector("#python-progress");
-  const submit = root.querySelector("#python-submit");
-  const reset = root.querySelector("#python-reset");
-  const result = root.querySelector("#python-reset");
-  const result = root.querySelector("#python-result");
-  const scoreText = root.querySelector("#python-score");
-  const message = root.querySelector("#python-message");
-  const percentage = root.querySelector("#python-percent");
-
-  let submitted = false;
-
-  function renderQuestions() {
-    questionsBox.innerHTML = "";
-
-    questions.forEach((item,index) => {
-      const div = document.createElement("div");
-      div.className = "question";
-
-      const heading = document.createElement("h3");
-      heading.textContent = (index+1)+". "+item.q;
-      div.appendChild(heading);
-
-      item.o.forEach((option,j) => {
-        const label = document.createElement("label");
-        label.className = "option";
-
-        const radio = document.createElement("input");
-        radio.type = "radio";
-        radio.name = "python-question-"+index;
-        radio.value = j;
-        radio.addEventListener("change",updateProgress);
-
-        const text = document.createElement("span");
-        text.textContent = String.fromCharCode(65+j)+". "+option;
-
-        label.appendChild(radio);
-        label.appendChild(text);
-        div.appendChild(label);
-      });
-
-      const feedback = document.createElement("div");
-      feedback.className = "feedback";
-      feedback.hidden = true;
-      div.appendChild(feedback);
-
-      questionsBox.appendChild(div);
-    });
-
-    updateProgress();
-  }
+  const progressText = root.querySelector("#quiz-progress-text");
+  const progressBar = root.querySelector("#quiz-progress-bar");
+  const submitButton = root.querySelector("#submit-python-quiz");
+  const resetButton = root.querySelector("#reset-python-quiz");
+  const resultBox = root.querySelector("#quiz-result");
+  const scoreText = root.querySelector("#quiz-score");
+  const feedbackText = root.querySelector("#quiz-feedback");
 
   function updateProgress() {
-    const answered = questions.filter((q,i) =>
-      root.querySelector(
-        'input[name="python-question-'+i+'"]:checked'
-      )
-    ).length;
+    let answered = 0;
 
-    progress.textContent =
-      "Questions answered: "+answered+" / "+questions.length;
+    questions.forEach(function (question) {
+      if (question.querySelector("input:checked")) {
+        answered++;
+      }
+    });
 
-    submit.disabled = answered !== questions.length || submitted;
+    progressText.textContent =
+      "Answered: " + answered + " / " + questions.length;
+
+    progressBar.style.width =
+      (answered / questions.length * 100) + "%";
+
+    submitButton.disabled = answered !== questions.length;
   }
 
-  function markQuiz() {
-    if (submitted) return;
+  questions.forEach(function (question) {
+    question.querySelectorAll("input").forEach(function (input) {
+      input.addEventListener("change", updateProgress);
+    });
+  });
 
+  submitButton.addEventListener("click", function () {
     let score = 0;
 
-    questions.forEach((item,index) => {
-      const question = questionsBox.children[index];
+    questions.forEach(function (question) {
+      const correctAnswer = question.dataset.answer;
       const selected = question.querySelector("input:checked");
-      const labels = question.querySelectorAll(".option");
-      const feedback = question.querySelector(".feedback");
+      const options = question.querySelectorAll(".quiz-option");
 
-      labels.forEach((label,j) => {
-        const radio = label.querySelector("input");
-        radio.disabled = true;
+      options.forEach(function (option) {
+        option.classList.remove("correct-answer", "wrong-answer");
+      });
 
-        if (j === item.a) label.classList.add("correct");
-        if (selected && Number(selected.value) === j && j !== item.a) {
-          label.classList.add("wrong");
+      options.forEach(function (option) {
+        const input = option.querySelector("input");
+
+        if (input.value === correctAnswer) {
+          option.classList.add("correct-answer");
         }
       });
 
-      if (selected && Number(selected.value) === item.a) {
-        score++;
-        feedback.textContent = "Correct answer!";
-        feedback.style.color = "#22c55e";
-      } else {
-        feedback.textContent =
-          "Correct answer: "+String.fromCharCode(65+item.a)+
-          ". "+item.o[item.a];
-        feedback.style.color = "#f87171";
+      if (selected) {
+        if (selected.value === correctAnswer) {
+          score++;
+        } else {
+          selected.closest(".quiz-option")
+            .classList.add("wrong-answer");
+        }
       }
-
-      feedback.hidden = false;
     });
 
-    submitted = true;
-    submit.disabled = true;
+    const percentage = Math.round(
+      (score / questions.length) * 100
+    );
 
-    scoreText.textContent = score+" / "+questions.length;
+    scoreText.textContent =
+      "You scored " + score + " out of " +
+      questions.length + " (" + percentage + "%)";
 
-    const percent = Math.round(score/questions.length*100);
-    percentage.textContent = "Your score: "+percent+"%";
-
-    if (score >= 13) {
-      message.textContent = "Excellent work! Outstanding performance.";
-    } else if (score >= 10) {
-      message.textContent = "Good job! Keep improving.";
-    } else if (score >= 7) {
-      message.textContent = "Fair attempt. Revise your notes.";
+    if (percentage >= 80) {
+      feedbackText.textContent =
+        "Excellent work! You have a strong understanding of Python.";
+    } else if (percentage >= 50) {
+      feedbackText.textContent =
+        "Good effort! Review the topics you found difficult and try again.";
     } else {
-      message.textContent = "Keep learning and try again!";
+      feedbackText.textContent =
+        "Keep practising! Read the notes again and attempt the quiz once more.";
     }
 
-    result.style.display = "block";
-    result.scrollIntoView({behavior:"smooth",block:"center"});
-  }
+    resultBox.style.display = "block";
+    submitButton.disabled = true;
 
-  function resetQuiz() {
-    submitted = false;
-    result.style.display = "none";
-    renderQuestions();
-    submit.disabled = true;
-  }
+    resultBox.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  });
 
-  submit.addEventListener("click",markQuiz);
-  reset.addEventListener("click",resetQuiz);
+  resetButton.addEventListener("click", function () {
+    questions.forEach(function (question) {
+      question.querySelectorAll("input").forEach(function (input) {
+        input.checked = false;
+      });
 
-  renderQuestions();
+      question.querySelectorAll(".quiz-option").forEach(function (option) {
+        option.classList.remove("correct-answer", "wrong-answer");
+      });
+    });
+
+    resultBox.style.display = "none";
+    scoreText.textContent = "";
+    feedbackText.textContent = "";
+
+    updateProgress();
+
+    root.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+
+  updateProgress();
 })();
 </script>
 </section>
+  
+  
 
 
 
