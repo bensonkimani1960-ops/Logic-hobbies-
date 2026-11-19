@@ -1280,641 +1280,710 @@ Learn. Experiment. Practise. Innovate.
 
   <!-- YO-YO IMAGES - ORIGINAL NAMES -->
 
+
 <section id="python-learning">
 <style>
 #python-learning {
-  --bg:#101827;
-  --card:#1c293c;
-  --text:#f1f5f9;
-  --muted:#aab8ca;
-  --accent:#00d5ff;
-  --line:#34445a;
-  background:var(--bg);
-  color:var(--text);
-  padding:30px 16px;
-  font-family:Arial,sans-serif;
-  line-height:1.7;
-  width:100%;
-  box-sizing:border-box;
+  --py-bg: #101827;
+  --py-card: #1c293c;
+  --py-text: #ffffff;
+  --py-muted: #b9c5d6;
+  --py-accent: #00d5ff;
+  --py-border: #34445c;
+  background: var(--py-bg);
+  color: var(--py-text);
+  font-family: Arial, sans-serif;
+  padding: 24px;
+  line-height: 1.7;
+  border-radius: 14px;
+  box-sizing: border-box;
 }
-#python-learning * {box-sizing:border-box;}
-#python-learning .container {
-  max-width:1050px;
-  margin:auto;
+#python-learning * {
+  box-sizing: border-box;
 }
-#python-learning h1,#python-learning h2,
-#python-learning h3 {line-height:1.3;}
+#python-learning h1,
+#python-learning h2,
+#python-learning h3 {
+  line-height: 1.3;
+}
 #python-learning h1 {
-  font-size:clamp(30px,5vw,48px);
-  color:var(--accent);
+  color: var(--py-accent);
+  font-size: clamp(28px, 5vw, 42px);
 }
 #python-learning h2 {
-  color:var(--accent);
-  font-size:24px;
-  border-bottom:1px solid var(--line);
-  padding-bottom:9px;
-  margin-top:35px;
+  color: var(--py-accent);
+  border-bottom: 1px solid var(--py-border);
+  padding-bottom: 8px;
+  margin-top: 32px;
 }
-#python-learning h3 {font-size:18px;}
-#python-learning p,#python-learning li {
-  color:var(--muted);
+#python-learning h3 {
+  color: #8deaff;
 }
-#python-learning .hero {
-  text-align:center;
-  padding:35px 15px;
-  background:linear-gradient(135deg,#162d46,#172238);
-  border:1px solid var(--line);
-  border-radius:18px;
-  margin-bottom:25px;
+#python-learning p,
+#python-learning li {
+  color: var(--py-muted);
 }
-#python-learning .hero p {
-  max-width:650px;
-  margin:10px auto;
+#python-learning a {
+  color: var(--py-accent);
 }
-#python-learning .tag {
-  display:inline-block;
-  color:var(--accent);
-  border:1px solid var(--accent);
-  border-radius:20px;
-  padding:3px 12px;
-  font-size:12px;
+#python-learning .py-hero {
+  text-align: center;
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #1c293c, #102d43);
+  border: 1px solid var(--py-border);
+  border-radius: 16px;
 }
-#python-learning .card {
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:13px;
-  padding:18px;
-  margin:14px 0;
+#python-learning .py-hero p {
+  max-width: 700px;
+  margin: 12px auto;
 }
-#python-learning .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-  gap:12px;
+#python-learning .py-card {
+  background: var(--py-card);
+  border: 1px solid var(--py-border);
+  padding: 18px;
+  border-radius: 12px;
+  margin: 16px 0;
 }
-#python-learning .grid .card {margin:0;}
-#python-learning table {
-  width:100%;
-  border-collapse:collapse;
-  margin:12px 0;
-  font-size:14px;
-}
-#python-learning th,#python-learning td {
-  border:1px solid var(--line);
-  padding:10px;
-  text-align:left;
-}
-#python-learning th {
-  color:var(--accent);
-  background:#22334a;
+#python-learning .py-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
 }
 #python-learning pre {
-  background:#080f1b;
-  color:#b8f5d9;
-  border:1px solid var(--line);
-  padding:15px;
-  border-radius:9px;
-  overflow-x:auto;
-  font-size:13px;
+  background: #080f1a;
+  color: #a9f2ff;
+  padding: 15px;
+  border-radius: 9px;
+  overflow-x: auto;
+  border: 1px solid var(--py-border);
 }
-#python-learning code {font-family:Consolas,monospace;}
-#python-learning .toc {
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
+#python-learning code {
+  color: #a9f2ff;
 }
-#python-learning .toc a {
-  color:var(--accent);
-  background:var(--card);
-  border:1px solid var(--line);
-  padding:7px 12px;
-  text-decoration:none;
-  border-radius:7px;
-  font-size:13px;
+#python-learning .py-tag {
+  display: inline-block;
+  background: #123d52;
+  color: var(--py-accent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
 }
-#python-learning .question {
-  border-bottom:1px solid var(--line);
-  padding:16px 0;
+#python-learning .py-table-wrap {
+  overflow-x: auto;
 }
-#python-learning .question h3 {margin:0 0 10px;}
-#python-learning .option {
-  display:flex;
-  gap:9px;
-  padding:9px 11px;
-  border:1px solid var(--line);
-  border-radius:8px;
-  margin:7px 0;
-  cursor:pointer;
-  color:var(--muted);
+#python-learning table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 450px;
 }
-#python-learning .option:hover {border-color:var(--accent);}
-#python-learning .option input {
-  margin-top:5px;
-  accent-color:#00d5ff;
+#python-learning th,
+#python-learning td {
+  border: 1px solid var(--py-border);
+  padding: 10px;
+  text-align: left;
 }
-#python-learning .option.correct {
-  border-color:#22c55e;
-  background:#123524;
-  color:#b9f8d0;
+#python-learning th {
+  color: var(--py-accent);
+  background: #142438;
 }
-#python-learning .option.wrong {
-  border-color:#ef4444;
-  background:#421d25;
-  color:#fecaca;
+#python-learning td {
+  color: var(--py-muted);
 }
-#python-learning .feedback {
-  font-size:13px;
-  margin-top:8px;
-  font-weight:bold;
+#python-learning .py-note {
+  border-left: 4px solid var(--py-accent);
+  padding: 12px 15px;
+  background: #142438;
+  border-radius: 6px;
+  margin: 15px 0;
 }
-#python-learning button {
-  background:var(--accent);
-  color:#071421;
-  border:0;
-  border-radius:8px;
-  padding:12px 20px;
-  font-weight:bold;
-  cursor:pointer;
-  margin:8px 5px 8px 0;
+#python-learning .py-btn {
+  background: var(--py-accent);
+  color: #06121d;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 6px 4px 6px 0;
 }
-#python-learning button.secondary {
-  background:#33465f;
-  color:white;
+#python-learning .py-btn:hover {
+  filter: brightness(1.12);
 }
-#python-learning button:disabled {
-  opacity:.5;
-  cursor:not-allowed;
+#python-learning .py-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
 }
-#python-learning .result {
-  background:#172c42;
-  border:1px solid var(--accent);
-  border-radius:12px;
-  padding:20px;
-  text-align:center;
-  margin-top:20px;
-  display:none;
+#python-learning .py-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-#python-learning .result strong {
-  font-size:35px;
-  color:var(--accent);
-  display:block;
+#python-learning .py-nav a {
+  text-decoration: none;
+  background: var(--py-card);
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid var(--py-border);
 }
-#python-learning .note {
-  border-left:4px solid var(--accent);
-  background:#182b40;
-  padding:12px 15px;
-  border-radius:5px;
-  color:var(--muted);
+#python-learning .py-small {
+  font-size: 14px;
+  color: var(--py-muted);
 }
-#python-learning .footer {
-  text-align:center;
-  border-top:1px solid var(--line);
-  margin-top:35px;
-  padding-top:20px;
-  color:var(--muted);
-}
-@media(max-width:600px) {
-  #python-learning {padding:22px 11px;}
-  #python-learning .card {padding:14px;}
-  #python-learning h2 {font-size:22px;}
-  #python-learning table {font-size:12px;}
-  #python-learning th,#python-learning td {padding:7px;}
+@media (max-width: 600px) {
+  #python-learning {
+    padding: 13px;
+  }
+  #python-learning .py-card {
+    padding: 13px;
+  }
 }
 </style>
 
-<div class="container">
-
-<!-- HERO -->
-<header class="hero">
-  <span class="tag">PROGRAMMING & TECHNOLOGY</span>
-  <h1>Python Coding</h1>
+<div class="py-hero">
+  <span class="py-tag">CODING • TECHNOLOGY • PROGRAMMING</span>
+  <h1>Python Programming</h1>
   <p>
-    Learn Python programming from the basics to advanced
-    concepts. Explore coding, electronics, robotics,
-    software development and practical projects.
+    Learn Python from the basics to more advanced concepts.
+    Explore examples, practise coding, and test your knowledge.
   </p>
-  <a href="#python-notes"><button>Start Learning</button></a>
-  <a href="#python-exam"><button class="secondary">Take the Quiz</button></a>
-</header>
+  <p><strong>Ben Logic — Hobby & Research Hub</strong></p>
+</div>
 
-<!-- CONTENTS -->
-<div class="card">
-  <h2>Learning Contents</h2>
-  <div class="toc">
-    <a href="#python-intro">Introduction</a>
-    <a href="#python-basics">Fundamentals</a>
-    <a href="#python-operators">Operators</a>
-    <a href="#python-decisions">Conditions</a>
-    <a href="#python-loops">Loops</a>
-    <a href="#python-data">Data Structures</a>
-    <a href="#python-functions">Functions</a>
-    <a href="#python-errors">Error Handling</a>
-    <a href="#python-oop">OOP</a>
-    <a href="#python-libraries">Libraries</a>
-    <a href="#python-electronics">Electronics</a>
-    <a href="#python-roadmap">Roadmap</a>
-    <a href="#python-exam">Examination</a>
+<div class="py-card">
+  <h2>Contents</h2>
+  <nav class="py-nav">
+    <a href="#py-intro">Introduction</a>
+    <a href="#py-basics">Fundamentals</a>
+    <a href="#py-operators">Operators</a>
+    <a href="#py-decisions">Conditions</a>
+    <a href="#py-loops">Loops</a>
+    <a href="#py-data">Data structures</a>
+    <a href="#py-functions">Functions</a>
+    <a href="#py-errors">Errors</a>
+    <a href="#py-oop">OOP</a>
+    <a href="#py-libraries">Libraries</a>
+    <a href="#py-electronics">Electronics</a>
+    <a href="#py-projects">Projects</a>
+    <a href="#py-roadmap">Roadmap</a>
+    <a href="#py-vocabulary">Vocabulary</a>
+    <a href="#py-quiz">Quiz</a>
+  </nav>
+</div>
+
+<!-- 1. INTRODUCTION -->
+<div class="py-card" id="py-intro">
+  <h2>1. Introduction to Python</h2>
+  <p>
+    Python is a high-level programming language used to give
+    instructions to computers. It is popular because its code
+    is relatively easy to read and understand.
+  </p>
+
+  <h3>What is Python used for?</h3>
+  <ul>
+    <li>Website and web application development.</li>
+    <li>Artificial intelligence and machine learning.</li>
+    <li>Robotics and automation.</li>
+    <li>Data analysis and scientific research.</li>
+    <li>Game development.</li>
+    <li>Computer vision and image processing.</li>
+    <li>Communication with electronic devices.</li>
+  </ul>
+
+  <h3>Advantages of Python</h3>
+  <ul>
+    <li>Easy-to-read syntax.</li>
+    <li>Free and open-source.</li>
+    <li>Works on different operating systems.</li>
+    <li>Has many libraries and learning resources.</li>
+    <li>Useful for beginners and professionals.</li>
+  </ul>
+
+  <div class="py-note">
+    <strong>Remember:</strong> Python is a programming language.
+    It allows you to write instructions that a computer can execute.
   </div>
 </div>
 
-<div id="python-notes">
+<!-- 2. FUNDAMENTALS -->
+<div class="py-card" id="py-basics">
+  <h2>2. Python Fundamentals</h2>
 
-<!-- 1 -->
-<h2 id="python-intro">1. Introduction to Python</h2>
-<div class="card">
+  <h3>A. Your first Python program</h3>
+  <pre><code>print("Hello World!")
+print("Welcome to Python")</code></pre>
+  <p><code>print()</code> displays information on the screen.</p>
+
+  <h3>B. Comments</h3>
+  <p>Comments are notes in code. Python does not execute them.</p>
+  <pre><code># This is a Python comment
+print("Learning Python")</code></pre>
+
+  <h3>C. Variables</h3>
   <p>
-    Python is a high-level, general-purpose programming
-    language used to give instructions to computers.
-    It was created by Guido van Rossum and first released
-    in 1991.
+    A variable is a named storage location used to hold information.
   </p>
-  <h3>Applications of Python</h3>
-  <ul>
-    <li>Artificial Intelligence (AI).</li>
-    <li>Website development.</li>
-    <li>Robotics and electronics.</li>
-    <li>Game development.</li>
-    <li>Data analysis.</li>
-    <li>Automation.</li>
-    <li>Software development.</li>
-  </ul>
-  <h3>Advantages of Python</h3>
-  <ul>
-    <li>Easy to read and understand.</li>
-    <li>Simple syntax.</li>
-    <li>Has many useful libraries.</li>
-    <li>Works on different operating systems.</li>
-    <li>Useful for many applications.</li>
-  </ul>
-</div>
-
-<!-- 2 -->
-<h2 id="python-basics">2. Python Fundamentals</h2>
-<div class="card">
-  <h3>Important concepts</h3>
-  <table>
-    <tr><th>Concept</th><th>Meaning</th></tr>
-    <tr><td>Syntax</td><td>Rules for writing code.</td></tr>
-    <tr><td>Variable</td><td>Stores information.</td></tr>
-    <tr><td>Data type</td><td>Defines the kind of data.</td></tr>
-    <tr><td>Function</td><td>Reusable block of code.</td></tr>
-    <tr><td>Loop</td><td>Repeats instructions.</td></tr>
-    <tr><td>Condition</td><td>Makes decisions.</td></tr>
-    <tr><td>Comment</td><td>Explains code.</td></tr>
-  </table>
-
-  <h3>Basic Python commands</h3>
-  <pre><code>print("Hello World")
-
-name = input("Enter your name: ")
-
-print("Welcome", name)</code></pre>
-
-  <h3>Variables</h3>
-  <p>A variable is a named storage location for information.</p>
   <pre><code>name = "Ben"
 age = 20
-country = "Kenya"
+height = 1.75
 
 print(name)
-print(age)
-print(country)</code></pre>
+print(age)</code></pre>
 
-  <h3>Data types</h3>
-  <table>
-    <tr><th>Type</th><th>Meaning</th><th>Example</th></tr>
-    <tr><td>int</td><td>Whole number</td><td>25</td></tr>
-    <tr><td>float</td><td>Decimal number</td><td>3.14</td></tr>
-    <tr><td>str</td><td>Text</td><td>"Python"</td></tr>
-    <tr><td>bool</td><td>True or False</td><td>True</td></tr>
-    <tr><td>list</td><td>Collection</td><td>[1,2,3]</td></tr>
-    <tr><td>tuple</td><td>Fixed collection</td><td>(1,2,3)</td></tr>
-    <tr><td>dict</td><td>Key-value pairs</td><td>{"name":"Ben"}</td></tr>
-    <tr><td>set</td><td>Unique items</td><td>{1,2,3}</td></tr>
-  </table>
+  <h3>D. Data types</h3>
+  <div class="py-table-wrap">
+    <table>
+      <tr><th>Data type</th><th>Meaning</th><th>Example</th></tr>
+      <tr><td>String (str)</td><td>Text</td><td>"Hello"</td></tr>
+      <tr><td>Integer (int)</td><td>Whole number</td><td>25</td></tr>
+      <tr><td>Float</td><td>Decimal number</td><td>3.14</td></tr>
+      <tr><td>Boolean (bool)</td><td>True or False</td><td>True</td></tr>
+      <tr><td>List</td><td>Collection of items</td><td>[1, 2, 3]</td></tr>
+      <tr><td>Dictionary</td><td>Key-value collection</td><td>{"{"}"name": "Ben"{"}"}</td></tr>
+    </table>
+  </div>
 
-  <h3>Input and output</h3>
+  <h3>E. Getting user input</h3>
+  <p><code>input()</code> allows a program to receive information from a user.</p>
   <pre><code>name = input("Enter your name: ")
 print("Hello", name)</code></pre>
 
-  <h3>Type conversion</h3>
-  <pre><code>age = "20"
+  <h3>F. Converting data types</h3>
+  <pre><code>age = input("Enter your age: ")
 age = int(age)
 
-print(age)</code></pre>
-</div>
-
-<!-- 3 -->
-<h2 id="python-operators">3. Python Operators</h2>
-<div class="card">
-  <p>Operators perform calculations, comparisons and assignments.</p>
-  <table>
-    <tr><th>Operator</th><th>Meaning</th></tr>
-    <tr><td>+</td><td>Addition</td></tr>
-    <tr><td>-</td><td>Subtraction</td></tr>
-    <tr><td>*</td><td>Multiplication</td></tr>
-    <tr><td>/</td><td>Division</td></tr>
-    <tr><td>//</td><td>Floor division</td></tr>
-    <tr><td>%</td><td>Remainder</td></tr>
-    <tr><td>**</td><td>Power</td></tr>
-    <tr><td>==</td><td>Equal to</td></tr>
-    <tr><td>!=</td><td>Not equal to</td></tr>
-    <tr><td>&gt; and &lt;</td><td>Greater and less than</td></tr>
-    <tr><td>and, or, not</td><td>Logical operators</td></tr>
-  </table>
-  <pre><code>number1 = 10
-number2 = 5
-
-print(number1 + number2)
-print(number1 * number2)
-print(number1 > number2)</code></pre>
-</div>
-
-<!-- 4 -->
-<h2 id="python-decisions">4. Decision Making</h2>
-<div class="card">
+print(age + 1)</code></pre>
   <p>
-    Decision-making allows a program to execute different
-    instructions depending on whether conditions are true or false.
+    <code>int()</code> converts a value to an integer.
+    <code>float()</code> converts to a decimal number.
+    <code>str()</code> converts to text.
   </p>
+</div>
+
+<!-- 3. OPERATORS -->
+<div class="py-card" id="py-operators">
+  <h2>3. Python Operators</h2>
+  <p>Operators are symbols or keywords used to perform operations.</p>
+
+  <h3>A. Arithmetic operators</h3>
+  <div class="py-table-wrap">
+    <table>
+      <tr><th>Operator</th><th>Meaning</th><th>Example</th></tr>
+      <tr><td>+</td><td>Addition</td><td>5 + 2 = 7</td></tr>
+      <tr><td>-</td><td>Subtraction</td><td>5 - 2 = 3</td></tr>
+      <tr><td>*</td><td>Multiplication</td><td>5 * 2 = 10</td></tr>
+      <tr><td>/</td><td>Division</td><td>6 / 2 = 3</td></tr>
+      <tr><td>//</td><td>Floor division</td><td>7 // 2 = 3</td></tr>
+      <tr><td>%</td><td>Remainder</td><td>7 % 2 = 1</td></tr>
+      <tr><td>**</td><td>Power</td><td>2 ** 3 = 8</td></tr>
+    </table>
+  </div>
+
+  <h3>B. Comparison operators</h3>
   <ul>
-    <li><b>if:</b> Checks a condition.</li>
-    <li><b>elif:</b> Checks another condition.</li>
-    <li><b>else:</b> Runs when previous conditions are false.</li>
+    <li><code>==</code> Equal to</li>
+    <li><code>!=</code> Not equal to</li>
+    <li><code>&gt;</code> Greater than</li>
+    <li><code>&lt;</code> Less than</li>
+    <li><code>&gt;=</code> Greater than or equal to</li>
+    <li><code>&lt;=</code> Less than or equal to</li>
   </ul>
-  <pre><code>age = 20
+
+  <h3>C. Logical operators</h3>
+  <ul>
+    <li><code>and</code> — both conditions must be true.</li>
+    <li><code>or</code> — at least one condition must be true.</li>
+    <li><code>not</code> — reverses a condition.</li>
+  </ul>
+
+  <h3>D. Assignment operators</h3>
+  <pre><code>x = 10
+x += 5   # x becomes 15
+x -= 2   # x becomes 13
+x *= 2   # x becomes 26</code></pre>
+</div>
+
+<!-- 4. DECISION MAKING -->
+<div class="py-card" id="py-decisions">
+  <h2>4. Decision Making</h2>
+  <p>
+    Decision statements allow a program to choose what to do
+    depending on whether a condition is true or false.
+  </p>
+
+  <h3>A. if statement</h3>
+  <pre><code>age = 18
 
 if age >= 18:
-    print("Adult")
+    print("You are an adult")</code></pre>
+
+  <h3>B. if and else</h3>
+  <pre><code>temperature = 30
+
+if temperature > 25:
+    print("It is hot")
 else:
-    print("Underage")</code></pre>
+    print("It is cool")</code></pre>
+
+  <h3>C. elif statement</h3>
+  <pre><code>marks = 75
+
+if marks >= 80:
+    print("Excellent")
+elif marks >= 50:
+    print("Pass")
+else:
+    print("Try again")</code></pre>
+
+  <div class="py-note">
+    Python uses indentation (spaces at the beginning of a line)
+    to show which instructions belong together.
+  </div>
 </div>
 
-<!-- 5 -->
-<h2 id="python-loops">5. Python Loops</h2>
-<div class="card">
-  <p>Loops repeat instructions automatically.</p>
-  <h3>For loop</h3>
-  <pre><code>for number in range(1, 6):
+<!-- 5. LOOPS -->
+<div class="py-card" id="py-loops">
+  <h2>5. Loops</h2>
+  <p>
+    A loop repeats instructions. It saves you from writing the
+    same code many times.
+  </p>
+
+  <h3>A. for loop</h3>
+  <pre><code>for number in range(5):
+    print(number)</code></pre>
+  <p>This prints the numbers 0, 1, 2, 3 and 4.</p>
+
+  <h3>B. while loop</h3>
+  <pre><code>count = 1
+
+while count <= 5:
+    print(count)
+    count += 1</code></pre>
+
+  <h3>C. break</h3>
+  <p><code>break</code> stops a loop.</p>
+  <pre><code>for number in range(10):
+    if number == 5:
+        break
     print(number)</code></pre>
 
-  <h3>While loop</h3>
-  <pre><code>number = 1
-
-while number <= 5:
-    print(number)
-    number += 1</code></pre>
-
-  <h3>Other loop controls</h3>
-  <ul>
-    <li><b>break:</b> Stops a loop.</li>
-    <li><b>continue:</b> Skips an iteration.</li>
-  </ul>
+  <h3>D. continue</h3>
+  <p><code>continue</code> skips the current repetition.</p>
+  <pre><code>for number in range(5):
+    if number == 2:
+        continue
+    print(number)</code></pre>
 </div>
 
-<!-- 6 -->
-<h2 id="python-data">6. Data Structures</h2>
-<div class="card">
-  <table>
-    <tr><th>Structure</th><th>Purpose</th></tr>
-    <tr><td>List</td><td>Stores multiple changeable items.</td></tr>
-    <tr><td>Tuple</td><td>Stores unchangeable items.</td></tr>
-    <tr><td>Dictionary</td><td>Stores key-value pairs.</td></tr>
-    <tr><td>Set</td><td>Stores unique items.</td></tr>
-  </table>
-  <h3>List example</h3>
-  <pre><code>hobbies = ["Arduino", "RC", "YoYo"]
+<!-- 6. DATA STRUCTURES -->
+<div class="py-card" id="py-data">
+  <h2>6. Python Data Structures</h2>
+  <p>Data structures organise and store information.</p>
 
-hobbies.append("Coding")
+  <h3>A. Lists</h3>
+  <p>A list stores multiple items and can be changed.</p>
+  <pre><code>fruits = ["Apple", "Mango", "Banana"]
 
-print(hobbies)</code></pre>
+print(fruits[0])
+fruits.append("Orange")
+fruits.remove("Mango")</code></pre>
 
-  <h3>Dictionary example</h3>
-  <pre><code>student = {
+  <h3>B. Tuples</h3>
+  <p>A tuple stores items that cannot normally be changed after creation.</p>
+  <pre><code>colours = ("Red", "Blue", "Green")
+print(colours[1])</code></pre>
+
+  <h3>C. Dictionaries</h3>
+  <p>A dictionary stores information as key-value pairs.</p>
+  <pre><code>person = {
     "name": "Ben",
     "age": 20,
     "country": "Kenya"
 }
 
-print(student["name"])</code></pre>
+print(person["name"])</code></pre>
+
+  <h3>D. Sets</h3>
+  <p>A set stores unique items and does not preserve a fixed order.</p>
+  <pre><code>numbers = {1, 2, 3, 3}
+print(numbers)</code></pre>
 </div>
 
-<!-- 7 -->
-<h2 id="python-functions">7. Functions</h2>
-<div class="card">
+<!-- 7. FUNCTIONS -->
+<div class="py-card" id="py-functions">
+  <h2>7. Functions</h2>
   <p>
-    A function is a reusable block of code designed to
-    perform a specific task.
+    A function is a reusable block of code that performs a particular task.
   </p>
+
+  <h3>Creating a function</h3>
+  <pre><code>def greet():
+    print("Hello Ben")
+
+greet()</code></pre>
+
+  <h3>Functions with parameters</h3>
+  <pre><code>def greet(name):
+    print("Hello", name)
+
+greet("Ben")</code></pre>
+
+  <h3>Returning a value</h3>
   <pre><code>def add(a, b):
     return a + b
 
-answer = add(10, 20)
-
+answer = add(5, 3)
 print(answer)</code></pre>
-  <ul>
-    <li><b>def:</b> Creates a function.</li>
-    <li><b>Parameter:</b> Receives information.</li>
-    <li><b>Argument:</b> Actual value passed to a function.</li>
-    <li><b>return:</b> Sends a result back.</li>
-  </ul>
+
+  <div class="py-note">
+    <strong>Remember:</strong> A function helps you reuse code
+    instead of writing the same instructions repeatedly.
+  </div>
 </div>
 
-<!-- 8 -->
-<h2 id="python-errors">8. Error Handling and File Handling</h2>
-<div class="card">
-  <h3>Common Python errors</h3>
-  <ul>
-    <li>SyntaxError – Incorrect code structure.</li>
-    <li>NameError – Undefined variable.</li>
-    <li>TypeError – Incorrect operation between types.</li>
-    <li>ValueError – Invalid value.</li>
-    <li>IndexError – Invalid collection position.</li>
-    <li>ZeroDivisionError – Division by zero.</li>
-  </ul>
-  <h3>Error handling</h3>
+<!-- 8. ERRORS AND FILES -->
+<div class="py-card" id="py-errors">
+  <h2>8. Error Handling and File Handling</h2>
+
+  <h3>A. Error handling</h3>
+  <p>
+    Error handling helps a program deal with problems without
+    immediately stopping unexpectedly.
+  </p>
   <pre><code>try:
-    number = int(input("Enter number: "))
-    print(number)
+    number = int(input("Enter a number: "))
+    print(10 / number)
 
 except ValueError:
-    print("Enter a valid number")</code></pre>
+    print("Please enter a valid number")
 
-  <h3>File handling</h3>
-  <p>Python can create, read and update files.</p>
-  <pre><code>with open("notes.txt", "w") as file:
+except ZeroDivisionError:
+    print("You cannot divide by zero")</code></pre>
+
+  <h3>B. File handling</h3>
+  <p>Python can create, read and write files.</p>
+  <pre><code># Writing to a file
+with open("notes.txt", "w") as file:
     file.write("Learning Python")
 
+# Reading a file
 with open("notes.txt", "r") as file:
-    print(file.read())</code></pre>
-  <p>File modes: r = read, w = write, a = append, x = create.</p>
+    content = file.read()
+    print(content)</code></pre>
 </div>
 
-<!-- 9 -->
-<h2 id="python-oop">9. Object-Oriented Programming</h2>
-<div class="card">
+<!-- 9. OOP -->
+<div class="py-card" id="py-oop">
+  <h2>9. Object-Oriented Programming (OOP)</h2>
   <p>
-    OOP is a programming approach that organises software
-    using classes and objects.
+    OOP is a way of organising programs using classes and objects.
   </p>
+
+  <h3>A. Class</h3>
+  <p>A class is a blueprint used to create objects.</p>
+
+  <h3>B. Object</h3>
+  <p>An object is an instance created from a class.</p>
+
   <pre><code>class Robot:
     def __init__(self, name):
         self.name = name
 
-robot1 = Robot("Arduino Robot")
+    def move(self):
+        print(self.name, "is moving")
 
-print(robot1.name)</code></pre>
-  <h3>Four main principles</h3>
-  <ol>
-    <li>Encapsulation – Keeping related data and methods together.</li>
-    <li>Inheritance – Reusing features from another class.</li>
-    <li>Polymorphism – Same interface, different behaviours.</li>
-    <li>Abstraction – Hiding unnecessary implementation details.</li>
-  </ol>
+my_robot = Robot("Robo")
+my_robot.move()</code></pre>
+
+  <h3>Four main OOP principles</h3>
+  <ul>
+    <li><strong>Encapsulation:</strong> Keeping data and related methods together.</li>
+    <li><strong>Inheritance:</strong> Creating a class based on another class.</li>
+    <li><strong>Polymorphism:</strong> Allowing different objects to use a common interface in different ways.</li>
+    <li><strong>Abstraction:</strong> Hiding unnecessary implementation details.</li>
+  </ul>
 </div>
 
-<!-- 10 -->
-<h2 id="python-libraries">10. Python Libraries and Modules</h2>
-<div class="card">
+<!-- 10. LIBRARIES -->
+<div class="py-card" id="py-libraries">
+  <h2>10. Python Libraries and Modules</h2>
   <p>
-    Libraries provide ready-made tools that make programming easier.
+    A module is a Python file containing reusable code.
+    A library or package provides tools for specific tasks.
   </p>
-  <table>
-    <tr><th>Library</th><th>Application</th></tr>
-    <tr><td>NumPy</td><td>Mathematical calculations</td></tr>
-    <tr><td>Pandas</td><td>Data analysis</td></tr>
-    <tr><td>Matplotlib</td><td>Charts and graphs</td></tr>
-    <tr><td>Pygame</td><td>Game development</td></tr>
-    <tr><td>OpenCV</td><td>Image processing</td></tr>
-    <tr><td>Django</td><td>Web development</td></tr>
-    <tr><td>TensorFlow</td><td>Machine learning</td></tr>
-    <tr><td>PyTorch</td><td>Artificial intelligence</td></tr>
-  </table>
-  <h3>Module example</h3>
+
+  <div class="py-table-wrap">
+    <table>
+      <tr><th>Library</th><th>Common use</th></tr>
+      <tr><td>math</td><td>Mathematical operations</td></tr>
+      <tr><td>random</td><td>Random numbers and choices</td></tr>
+      <tr><td>turtle</td><td>Drawing and beginner graphics</td></tr>
+      <tr><td>Pygame</td><td>Game development</td></tr>
+      <tr><td>NumPy</td><td>Numerical computing</td></tr>
+      <tr><td>Pandas</td><td>Data analysis</td></tr>
+      <tr><td>Matplotlib</td><td>Graphs and charts</td></tr>
+      <tr><td>OpenCV</td><td>Image and video processing</td></tr>
+      <tr><td>Django</td><td>Web development</td></tr>
+      <tr><td>TensorFlow</td><td>Machine learning</td></tr>
+    </table>
+  </div>
+
+  <h3>Importing a module</h3>
   <pre><code>import math
 
-print(math.sqrt(25))</code></pre>
+answer = math.sqrt(25)
+print(answer)</code></pre>
+
+  <h3>Installing a package</h3>
+  <pre><code>pip install pygame</code></pre>
+  <p class="py-small">
+    Run installation commands in your terminal or the package
+    manager provided by your Python app.
+  </p>
 </div>
 
-<!-- 11 -->
-<h2 id="python-electronics">11. Python and Electronics</h2>
-<div class="card">
+<!-- 11. ELECTRONICS -->
+<div class="py-card" id="py-electronics">
+  <h2>11. Python and Electronics</h2>
   <p>
-    Python can be used in robotics, electronics and
-    hardware projects through supported boards and libraries.
+    Python can be used in electronics, robotics and automation.
+    MicroPython is a version of Python designed for microcontrollers.
   </p>
-  <ul>
-    <li>Raspberry Pi supports Python.</li>
-    <li>Raspberry Pi Pico supports MicroPython.</li>
-    <li>ESP32 supports MicroPython.</li>
-    <li>Some Arduino boards support MicroPython.</li>
-    <li>Arduino Uno can communicate with Python through USB serial.</li>
-  </ul>
-  <div class="note">
-    Traditional Arduino Uno programming normally uses C/C++.
-    Python can communicate with the board through serial communication.
-  </div>
-  <h3>Example: Arduino LED control</h3>
-  <p>Arduino code:</p>
+
+  <h3>A. Python and Arduino</h3>
+  <p>
+    A computer can communicate with an Arduino through a USB serial
+    connection. Python can send and receive information using a
+    library such as PySerial.
+  </p>
+
+  <h3>B. Example Arduino code</h3>
   <pre><code>void setup() {
   Serial.begin(9600);
-  pinMode(13, OUTPUT);
 }
 
 void loop() {
-  if (Serial.available()) {
-    char command = Serial.read();
-
-    if (command == '1') {
-      digitalWrite(13, HIGH);
-    }
-
-    if (command == '0') {
-      digitalWrite(13, LOW);
-    }
-  }
+  Serial.println("Hello from Arduino");
+  delay(1000);
 }</code></pre>
-  <p>Python computer code:</p>
+
+  <h3>C. Example Python code</h3>
   <pre><code>import serial
 import time
 
-arduino = serial.Serial('COM3', 9600)
-
+arduino = serial.Serial("COM3", 9600)
 time.sleep(2)
 
-arduino.write(b'1')
+while True:
+    message = arduino.readline().decode().strip()
+    print(message)</code></pre>
 
-time.sleep(2)
+  <p class="py-small">
+    Change COM3 to your Arduino's actual serial port. On Linux or
+    Android environments, the port name and USB access method may differ.
+    Install PySerial where supported before running the example.
+  </p>
 
-arduino.write(b'0')
-
-arduino.close()</code></pre>
-  <p>Replace COM3 with the actual serial port on your computer.</p>
+  <h3>D. MicroPython</h3>
+  <p>
+    MicroPython lets supported microcontrollers run Python-style code
+    directly. It is used with boards such as the Raspberry Pi Pico
+    and some ESP32 boards.
+  </p>
 </div>
 
-<!-- 12 -->
-<h2 id="python-projects">12. Practical Python Projects</h2>
-<div class="grid">
-  <div class="card">
-    <h3>01. Calculator</h3>
-    <p>Practise variables, inputs and operators.</p>
-  </div>
-  <div class="card">
-    <h3>02. Guessing Game</h3>
-    <p>Practise loops and conditions.</p>
-  </div>
-  <div class="card">
-    <h3>03. Digital Clock</h3>
-    <p>Practise time and loops.</p>
-  </div>
-  <div class="card">
-    <h3>04. Student System</h3>
-    <p>Practise lists and dictionaries.</p>
-  </div>
-  <div class="card">
-    <h3>05. Computer Game</h3>
-    <p>Practise Pygame and OOP.</p>
-  </div>
-  <div class="card">
-    <h3>06. RC Robot</h3>
-    <p>Combine Python and electronics.</p>
+<!-- 12. PROJECTS -->
+<div class="py-card" id="py-projects">
+  <h2>12. Practical Python Projects</h2>
+  <div class="py-grid">
+    <div class="py-card">
+      <h3>1. Calculator</h3>
+      <p>Practise variables, input and arithmetic operators.</p>
+    </div>
+    <div class="py-card">
+      <h3>2. Number guessing game</h3>
+      <p>Practise loops, conditions and random numbers.</p>
+    </div>
+    <div class="py-card">
+      <h3>3. Quiz application</h3>
+      <p>Practise lists, dictionaries and functions.</p>
+    </div>
+    <div class="py-card">
+      <h3>4. To-do list</h3>
+      <p>Practise lists and file handling.</p>
+    </div>
+    <div class="py-card">
+      <h3>5. RC control dashboard</h3>
+      <p>Explore interfaces and serial communication.</p>
+    </div>
+    <div class="py-card">
+      <h3>6. Arduino sensor monitor</h3>
+      <p>Read sensor information sent from an Arduino.</p>
+    </div>
   </div>
 </div>
 
-<!-- 13 -->
-<h2 id="python-roadmap">13. Python Learning Roadmap</h2>
-<div class="card">
+<!-- 13. ROADMAP -->
+<div class="py-card" id="py-roadmap">
+  <h2>13. Python Learning Roadmap</h2>
   <ol>
-    <li>Week 1: Introduction, syntax and variables.</li>
-    <li>Week 2: Operators and decision-making.</li>
-    <li>Week 3: Loops and data structures.</li>
-    <li>Week 4: Functions and file handling.</li>
-    <li>Week 5: Object-oriented programming.</li>
-    <li>Week 6: Practical programming projects.</li>
-    <li>After Week 6: Robotics, AI or web development.</li>
+    <li><strong>Beginner:</strong> Learn print, variables, data types and input.</li>
+    <li><strong>Basic logic:</strong> Learn operators and if statements.</li>
+    <li><strong>Repetition:</strong> Learn for and while loops.</li>
+    <li><strong>Organisation:</strong> Learn lists, dictionaries and functions.</li>
+    <li><strong>Intermediate:</strong> Learn files, errors and OOP.</li>
+    <li><strong>Libraries:</strong> Explore useful Python packages.</li>
+    <li><strong>Projects:</strong> Build practical applications.</li>
+    <li><strong>Advanced:</strong> Explore automation, AI, data and robotics.</li>
   </ol>
+  <div class="py-note">
+    Study one topic at a time. Write the code yourself, run it,
+    change it and observe what happens.
+  </div>
 </div>
 
-<!-- 14 -->
-<h2>14. Important Programming Vocabulary</h2>
-<div class="card">
-  <table>
-    <tr><th>Word</th><th>Meaning</th></tr>
-    <tr><td>Coding</td><td>Writing computer instructions.</td></tr>
-    <tr><td>Algorithm</td><td>Steps used to solve a problem.</td></tr>
-    <tr><td>Debugging</td><td>Finding and correcting errors.</td></tr>
-    <tr><td>Interpreter</td><td>Executes Python instructions.</td></tr>
-    <tr><td>IDE</td><td>Software for writing and running code.</td></tr>
-    <tr><td>Framework</td><td>Tools and structure for building applications.</td></tr>
-    <tr><td>API</td><td>Allows software systems to communicate.</td></tr>
-  </table>
+<!-- 14. VOCABULARY -->
+<div class="py-card" id="py-vocabulary">
+  <h2>14. Important Python Vocabulary</h2>
+  <div class="py-table-wrap">
+    <table>
+      <tr><th>Word</th><th>Simple meaning</th></tr>
+      <tr><td>Code</td><td>Instructions written for a computer.</td></tr>
+      <tr><td>Syntax</td><td>Rules for writing code correctly.</td></tr>
+      <tr><td>Variable</td><td>A named place for storing information.</td></tr>
+      <tr><td>Function</td><td>A reusable block of code.</td></tr>
+      <tr><td>Loop</td><td>Instructions that repeat.</td></tr>
+      <tr><td>Condition</td><td>A test that can be true or false.</td></tr>
+      <tr><td>List</td><td>A collection of items.</td></tr>
+      <tr><td>Library</td><td>A collection of reusable programming tools.</td></tr>
+      <tr><td>Bug</td><td>An error or problem in a program.</td></tr>
+      <tr><td>Debugging</td><td>Finding and fixing errors.</td></tr>
+      <tr><td>IDE</td><td>An application for writing and running code.</td></tr>
+      <tr><td>Algorithm</td><td>A step-by-step way to solve a problem.</td></tr>
+    </table>
+  </div>
 </div>
+  </section>
+                               
+  
+  
 
-</div>
+
+
+
+
+
+
+
+  
+
+
 
 <!-- EXAMINATION -->
   
 
-</section>
+
 
   
 <section id="python-quiz">
