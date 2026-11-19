@@ -1280,6 +1280,761 @@ Learn. Experiment. Practise. Innovate.
 
   <!-- YO-YO IMAGES - ORIGINAL NAMES -->
 
+<section id="python-learning">
+<style>
+#python-learning {
+  --bg:#101827;
+  --card:#1c293c;
+  --text:#f1f5f9;
+  --muted:#aab8ca;
+  --accent:#00d5ff;
+  --line:#34445a;
+  background:var(--bg);
+  color:var(--text);
+  padding:30px 16px;
+  font-family:Arial,sans-serif;
+  line-height:1.7;
+  width:100%;
+  box-sizing:border-box;
+}
+#python-learning * {box-sizing:border-box;}
+#python-learning .container {
+  max-width:1050px;
+  margin:auto;
+}
+#python-learning h1,#python-learning h2,
+#python-learning h3 {line-height:1.3;}
+#python-learning h1 {
+  font-size:clamp(30px,5vw,48px);
+  color:var(--accent);
+}
+#python-learning h2 {
+  color:var(--accent);
+  font-size:24px;
+  border-bottom:1px solid var(--line);
+  padding-bottom:9px;
+  margin-top:35px;
+}
+#python-learning h3 {font-size:18px;}
+#python-learning p,#python-learning li {
+  color:var(--muted);
+}
+#python-learning .hero {
+  text-align:center;
+  padding:35px 15px;
+  background:linear-gradient(135deg,#162d46,#172238);
+  border:1px solid var(--line);
+  border-radius:18px;
+  margin-bottom:25px;
+}
+#python-learning .hero p {
+  max-width:650px;
+  margin:10px auto;
+}
+#python-learning .tag {
+  display:inline-block;
+  color:var(--accent);
+  border:1px solid var(--accent);
+  border-radius:20px;
+  padding:3px 12px;
+  font-size:12px;
+}
+#python-learning .card {
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:18px;
+  margin:14px 0;
+}
+#python-learning .grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:12px;
+}
+#python-learning .grid .card {margin:0;}
+#python-learning table {
+  width:100%;
+  border-collapse:collapse;
+  margin:12px 0;
+  font-size:14px;
+}
+#python-learning th,#python-learning td {
+  border:1px solid var(--line);
+  padding:10px;
+  text-align:left;
+}
+#python-learning th {
+  color:var(--accent);
+  background:#22334a;
+}
+#python-learning pre {
+  background:#080f1b;
+  color:#b8f5d9;
+  border:1px solid var(--line);
+  padding:15px;
+  border-radius:9px;
+  overflow-x:auto;
+  font-size:13px;
+}
+#python-learning code {font-family:Consolas,monospace;}
+#python-learning .toc {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+#python-learning .toc a {
+  color:var(--accent);
+  background:var(--card);
+  border:1px solid var(--line);
+  padding:7px 12px;
+  text-decoration:none;
+  border-radius:7px;
+  font-size:13px;
+}
+#python-learning .question {
+  border-bottom:1px solid var(--line);
+  padding:16px 0;
+}
+#python-learning .question h3 {margin:0 0 10px;}
+#python-learning .option {
+  display:flex;
+  gap:9px;
+  padding:9px 11px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  margin:7px 0;
+  cursor:pointer;
+  color:var(--muted);
+}
+#python-learning .option:hover {border-color:var(--accent);}
+#python-learning .option input {
+  margin-top:5px;
+  accent-color:#00d5ff;
+}
+#python-learning .option.correct {
+  border-color:#22c55e;
+  background:#123524;
+  color:#b9f8d0;
+}
+#python-learning .option.wrong {
+  border-color:#ef4444;
+  background:#421d25;
+  color:#fecaca;
+}
+#python-learning .feedback {
+  font-size:13px;
+  margin-top:8px;
+  font-weight:bold;
+}
+#python-learning button {
+  background:var(--accent);
+  color:#071421;
+  border:0;
+  border-radius:8px;
+  padding:12px 20px;
+  font-weight:bold;
+  cursor:pointer;
+  margin:8px 5px 8px 0;
+}
+#python-learning button.secondary {
+  background:#33465f;
+  color:white;
+}
+#python-learning button:disabled {
+  opacity:.5;
+  cursor:not-allowed;
+}
+#python-learning .result {
+  background:#172c42;
+  border:1px solid var(--accent);
+  border-radius:12px;
+  padding:20px;
+  text-align:center;
+  margin-top:20px;
+  display:none;
+}
+#python-learning .result strong {
+  font-size:35px;
+  color:var(--accent);
+  display:block;
+}
+#python-learning .note {
+  border-left:4px solid var(--accent);
+  background:#182b40;
+  padding:12px 15px;
+  border-radius:5px;
+  color:var(--muted);
+}
+#python-learning .footer {
+  text-align:center;
+  border-top:1px solid var(--line);
+  margin-top:35px;
+  padding-top:20px;
+  color:var(--muted);
+}
+@media(max-width:600px) {
+  #python-learning {padding:22px 11px;}
+  #python-learning .card {padding:14px;}
+  #python-learning h2 {font-size:22px;}
+  #python-learning table {font-size:12px;}
+  #python-learning th,#python-learning td {padding:7px;}
+}
+</style>
+
+<div class="container">
+
+<!-- HERO -->
+<header class="hero">
+  <span class="tag">PROGRAMMING & TECHNOLOGY</span>
+  <h1>Python Coding</h1>
+  <p>
+    Learn Python programming from the basics to advanced
+    concepts. Explore coding, electronics, robotics,
+    software development and practical projects.
+  </p>
+  <a href="#python-notes"><button>Start Learning</button></a>
+  <a href="#python-exam"><button class="secondary">Take the Quiz</button></a>
+</header>
+
+<!-- CONTENTS -->
+<div class="card">
+  <h2>Learning Contents</h2>
+  <div class="toc">
+    <a href="#python-intro">Introduction</a>
+    <a href="#python-basics">Fundamentals</a>
+    <a href="#python-operators">Operators</a>
+    <a href="#python-decisions">Conditions</a>
+    <a href="#python-loops">Loops</a>
+    <a href="#python-data">Data Structures</a>
+    <a href="#python-functions">Functions</a>
+    <a href="#python-errors">Error Handling</a>
+    <a href="#python-oop">OOP</a>
+    <a href="#python-libraries">Libraries</a>
+    <a href="#python-electronics">Electronics</a>
+    <a href="#python-roadmap">Roadmap</a>
+    <a href="#python-exam">Examination</a>
+  </div>
+</div>
+
+<div id="python-notes">
+
+<!-- 1 -->
+<h2 id="python-intro">1. Introduction to Python</h2>
+<div class="card">
+  <p>
+    Python is a high-level, general-purpose programming
+    language used to give instructions to computers.
+    It was created by Guido van Rossum and first released
+    in 1991.
+  </p>
+  <h3>Applications of Python</h3>
+  <ul>
+    <li>Artificial Intelligence (AI).</li>
+    <li>Website development.</li>
+    <li>Robotics and electronics.</li>
+    <li>Game development.</li>
+    <li>Data analysis.</li>
+    <li>Automation.</li>
+    <li>Software development.</li>
+  </ul>
+  <h3>Advantages of Python</h3>
+  <ul>
+    <li>Easy to read and understand.</li>
+    <li>Simple syntax.</li>
+    <li>Has many useful libraries.</li>
+    <li>Works on different operating systems.</li>
+    <li>Useful for many applications.</li>
+  </ul>
+</div>
+
+<!-- 2 -->
+<h2 id="python-basics">2. Python Fundamentals</h2>
+<div class="card">
+  <h3>Important concepts</h3>
+  <table>
+    <tr><th>Concept</th><th>Meaning</th></tr>
+    <tr><td>Syntax</td><td>Rules for writing code.</td></tr>
+    <tr><td>Variable</td><td>Stores information.</td></tr>
+    <tr><td>Data type</td><td>Defines the kind of data.</td></tr>
+    <tr><td>Function</td><td>Reusable block of code.</td></tr>
+    <tr><td>Loop</td><td>Repeats instructions.</td></tr>
+    <tr><td>Condition</td><td>Makes decisions.</td></tr>
+    <tr><td>Comment</td><td>Explains code.</td></tr>
+  </table>
+
+  <h3>Basic Python commands</h3>
+  <pre><code>print("Hello World")
+
+name = input("Enter your name: ")
+
+print("Welcome", name)</code></pre>
+
+  <h3>Variables</h3>
+  <p>A variable is a named storage location for information.</p>
+  <pre><code>name = "Ben"
+age = 20
+country = "Kenya"
+
+print(name)
+print(age)
+print(country)</code></pre>
+
+  <h3>Data types</h3>
+  <table>
+    <tr><th>Type</th><th>Meaning</th><th>Example</th></tr>
+    <tr><td>int</td><td>Whole number</td><td>25</td></tr>
+    <tr><td>float</td><td>Decimal number</td><td>3.14</td></tr>
+    <tr><td>str</td><td>Text</td><td>"Python"</td></tr>
+    <tr><td>bool</td><td>True or False</td><td>True</td></tr>
+    <tr><td>list</td><td>Collection</td><td>[1,2,3]</td></tr>
+    <tr><td>tuple</td><td>Fixed collection</td><td>(1,2,3)</td></tr>
+    <tr><td>dict</td><td>Key-value pairs</td><td>{"name":"Ben"}</td></tr>
+    <tr><td>set</td><td>Unique items</td><td>{1,2,3}</td></tr>
+  </table>
+
+  <h3>Input and output</h3>
+  <pre><code>name = input("Enter your name: ")
+print("Hello", name)</code></pre>
+
+  <h3>Type conversion</h3>
+  <pre><code>age = "20"
+age = int(age)
+
+print(age)</code></pre>
+</div>
+
+<!-- 3 -->
+<h2 id="python-operators">3. Python Operators</h2>
+<div class="card">
+  <p>Operators perform calculations, comparisons and assignments.</p>
+  <table>
+    <tr><th>Operator</th><th>Meaning</th></tr>
+    <tr><td>+</td><td>Addition</td></tr>
+    <tr><td>-</td><td>Subtraction</td></tr>
+    <tr><td>*</td><td>Multiplication</td></tr>
+    <tr><td>/</td><td>Division</td></tr>
+    <tr><td>//</td><td>Floor division</td></tr>
+    <tr><td>%</td><td>Remainder</td></tr>
+    <tr><td>**</td><td>Power</td></tr>
+    <tr><td>==</td><td>Equal to</td></tr>
+    <tr><td>!=</td><td>Not equal to</td></tr>
+    <tr><td>&gt; and &lt;</td><td>Greater and less than</td></tr>
+    <tr><td>and, or, not</td><td>Logical operators</td></tr>
+  </table>
+  <pre><code>number1 = 10
+number2 = 5
+
+print(number1 + number2)
+print(number1 * number2)
+print(number1 > number2)</code></pre>
+</div>
+
+<!-- 4 -->
+<h2 id="python-decisions">4. Decision Making</h2>
+<div class="card">
+  <p>
+    Decision-making allows a program to execute different
+    instructions depending on whether conditions are true or false.
+  </p>
+  <ul>
+    <li><b>if:</b> Checks a condition.</li>
+    <li><b>elif:</b> Checks another condition.</li>
+    <li><b>else:</b> Runs when previous conditions are false.</li>
+  </ul>
+  <pre><code>age = 20
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Underage")</code></pre>
+</div>
+
+<!-- 5 -->
+<h2 id="python-loops">5. Python Loops</h2>
+<div class="card">
+  <p>Loops repeat instructions automatically.</p>
+  <h3>For loop</h3>
+  <pre><code>for number in range(1, 6):
+    print(number)</code></pre>
+
+  <h3>While loop</h3>
+  <pre><code>number = 1
+
+while number <= 5:
+    print(number)
+    number += 1</code></pre>
+
+  <h3>Other loop controls</h3>
+  <ul>
+    <li><b>break:</b> Stops a loop.</li>
+    <li><b>continue:</b> Skips an iteration.</li>
+  </ul>
+</div>
+
+<!-- 6 -->
+<h2 id="python-data">6. Data Structures</h2>
+<div class="card">
+  <table>
+    <tr><th>Structure</th><th>Purpose</th></tr>
+    <tr><td>List</td><td>Stores multiple changeable items.</td></tr>
+    <tr><td>Tuple</td><td>Stores unchangeable items.</td></tr>
+    <tr><td>Dictionary</td><td>Stores key-value pairs.</td></tr>
+    <tr><td>Set</td><td>Stores unique items.</td></tr>
+  </table>
+  <h3>List example</h3>
+  <pre><code>hobbies = ["Arduino", "RC", "YoYo"]
+
+hobbies.append("Coding")
+
+print(hobbies)</code></pre>
+
+  <h3>Dictionary example</h3>
+  <pre><code>student = {
+    "name": "Ben",
+    "age": 20,
+    "country": "Kenya"
+}
+
+print(student["name"])</code></pre>
+</div>
+
+<!-- 7 -->
+<h2 id="python-functions">7. Functions</h2>
+<div class="card">
+  <p>
+    A function is a reusable block of code designed to
+    perform a specific task.
+  </p>
+  <pre><code>def add(a, b):
+    return a + b
+
+answer = add(10, 20)
+
+print(answer)</code></pre>
+  <ul>
+    <li><b>def:</b> Creates a function.</li>
+    <li><b>Parameter:</b> Receives information.</li>
+    <li><b>Argument:</b> Actual value passed to a function.</li>
+    <li><b>return:</b> Sends a result back.</li>
+  </ul>
+</div>
+
+<!-- 8 -->
+<h2 id="python-errors">8. Error Handling and File Handling</h2>
+<div class="card">
+  <h3>Common Python errors</h3>
+  <ul>
+    <li>SyntaxError – Incorrect code structure.</li>
+    <li>NameError – Undefined variable.</li>
+    <li>TypeError – Incorrect operation between types.</li>
+    <li>ValueError – Invalid value.</li>
+    <li>IndexError – Invalid collection position.</li>
+    <li>ZeroDivisionError – Division by zero.</li>
+  </ul>
+  <h3>Error handling</h3>
+  <pre><code>try:
+    number = int(input("Enter number: "))
+    print(number)
+
+except ValueError:
+    print("Enter a valid number")</code></pre>
+
+  <h3>File handling</h3>
+  <p>Python can create, read and update files.</p>
+  <pre><code>with open("notes.txt", "w") as file:
+    file.write("Learning Python")
+
+with open("notes.txt", "r") as file:
+    print(file.read())</code></pre>
+  <p>File modes: r = read, w = write, a = append, x = create.</p>
+</div>
+
+<!-- 9 -->
+<h2 id="python-oop">9. Object-Oriented Programming</h2>
+<div class="card">
+  <p>
+    OOP is a programming approach that organises software
+    using classes and objects.
+  </p>
+  <pre><code>class Robot:
+    def __init__(self, name):
+        self.name = name
+
+robot1 = Robot("Arduino Robot")
+
+print(robot1.name)</code></pre>
+  <h3>Four main principles</h3>
+  <ol>
+    <li>Encapsulation – Keeping related data and methods together.</li>
+    <li>Inheritance – Reusing features from another class.</li>
+    <li>Polymorphism – Same interface, different behaviours.</li>
+    <li>Abstraction – Hiding unnecessary implementation details.</li>
+  </ol>
+</div>
+
+<!-- 10 -->
+<h2 id="python-libraries">10. Python Libraries and Modules</h2>
+<div class="card">
+  <p>
+    Libraries provide ready-made tools that make programming easier.
+  </p>
+  <table>
+    <tr><th>Library</th><th>Application</th></tr>
+    <tr><td>NumPy</td><td>Mathematical calculations</td></tr>
+    <tr><td>Pandas</td><td>Data analysis</td></tr>
+    <tr><td>Matplotlib</td><td>Charts and graphs</td></tr>
+    <tr><td>Pygame</td><td>Game development</td></tr>
+    <tr><td>OpenCV</td><td>Image processing</td></tr>
+    <tr><td>Django</td><td>Web development</td></tr>
+    <tr><td>TensorFlow</td><td>Machine learning</td></tr>
+    <tr><td>PyTorch</td><td>Artificial intelligence</td></tr>
+  </table>
+  <h3>Module example</h3>
+  <pre><code>import math
+
+print(math.sqrt(25))</code></pre>
+</div>
+
+<!-- 11 -->
+<h2 id="python-electronics">11. Python and Electronics</h2>
+<div class="card">
+  <p>
+    Python can be used in robotics, electronics and
+    hardware projects through supported boards and libraries.
+  </p>
+  <ul>
+    <li>Raspberry Pi supports Python.</li>
+    <li>Raspberry Pi Pico supports MicroPython.</li>
+    <li>ESP32 supports MicroPython.</li>
+    <li>Some Arduino boards support MicroPython.</li>
+    <li>Arduino Uno can communicate with Python through USB serial.</li>
+  </ul>
+  <div class="note">
+    Traditional Arduino Uno programming normally uses C/C++.
+    Python can communicate with the board through serial communication.
+  </div>
+  <h3>Example: Arduino LED control</h3>
+  <p>Arduino code:</p>
+  <pre><code>void setup() {
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  if (Serial.available()) {
+    char command = Serial.read();
+
+    if (command == '1') {
+      digitalWrite(13, HIGH);
+    }
+
+    if (command == '0') {
+      digitalWrite(13, LOW);
+    }
+  }
+}</code></pre>
+  <p>Python computer code:</p>
+  <pre><code>import serial
+import time
+
+arduino = serial.Serial('COM3', 9600)
+
+time.sleep(2)
+
+arduino.write(b'1')
+
+time.sleep(2)
+
+arduino.write(b'0')
+
+arduino.close()</code></pre>
+  <p>Replace COM3 with the actual serial port on your computer.</p>
+</div>
+
+<!-- 12 -->
+<h2 id="python-projects">12. Practical Python Projects</h2>
+<div class="grid">
+  <div class="card">
+    <h3>01. Calculator</h3>
+    <p>Practise variables, inputs and operators.</p>
+  </div>
+  <div class="card">
+    <h3>02. Guessing Game</h3>
+    <p>Practise loops and conditions.</p>
+  </div>
+  <div class="card">
+    <h3>03. Digital Clock</h3>
+    <p>Practise time and loops.</p>
+  </div>
+  <div class="card">
+    <h3>04. Student System</h3>
+    <p>Practise lists and dictionaries.</p>
+  </div>
+  <div class="card">
+    <h3>05. Computer Game</h3>
+    <p>Practise Pygame and OOP.</p>
+  </div>
+  <div class="card">
+    <h3>06. RC Robot</h3>
+    <p>Combine Python and electronics.</p>
+  </div>
+</div>
+
+<!-- 13 -->
+<h2 id="python-roadmap">13. Python Learning Roadmap</h2>
+<div class="card">
+  <ol>
+    <li>Week 1: Introduction, syntax and variables.</li>
+    <li>Week 2: Operators and decision-making.</li>
+    <li>Week 3: Loops and data structures.</li>
+    <li>Week 4: Functions and file handling.</li>
+    <li>Week 5: Object-oriented programming.</li>
+    <li>Week 6: Practical programming projects.</li>
+    <li>After Week 6: Robotics, AI or web development.</li>
+  </ol>
+</div>
+
+<!-- 14 -->
+<h2>14. Important Programming Vocabulary</h2>
+<div class="card">
+  <table>
+    <tr><th>Word</th><th>Meaning</th></tr>
+    <tr><td>Coding</td><td>Writing computer instructions.</td></tr>
+    <tr><td>Algorithm</td><td>Steps used to solve a problem.</td></tr>
+    <tr><td>Debugging</td><td>Finding and correcting errors.</td></tr>
+    <tr><td>Interpreter</td><td>Executes Python instructions.</td></tr>
+    <tr><td>IDE</td><td>Software for writing and running code.</td></tr>
+    <tr><td>Framework</td><td>Tools and structure for building applications.</td></tr>
+    <tr><td>API</td><td>Allows software systems to communicate.</td></tr>
+  </table>
+</div>
+
+</div>
+
+<!-- EXAMINATION -->
+<div id="python-exam">
+<h2>15. Python Coding Examination</h2>
+<div class="card">
+  <p>
+    Test your understanding of Python with these 15
+    multiple-choice questions. Select one answer for
+    each question, then submit to see your results.
+  </p>
+  <div id="python-progress" class="note">
+    Questions answered: 0 / 15
+  </div>
+  <div id="python-questions"></div>
+  <button id="python-submit" type="button" disabled>
+    Submit Examination
+  </button>
+  <button id="python-reset" class="secondary" type="button">
+    Reset Quiz
+  </button>
+  <div id="python-result" class="result" aria-live="polite">
+    <strong id="python-score"></strong>
+    <h3 id="python-message"></h3>
+    <p id="python-percent"></p>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <h3>BEN LOGIC | RESEARCH & LEARNING</h3>
+  <p>Learn • Practise • Build • Innovate</p>
+  <p>Python Coding Study Section</p>
+</div>
+
+</div>
+
+<script>
+(function() {
+  const root = document.getElementById("python-learning");
+  if (!root || root.dataset.quizReady) return;
+  root.dataset.quizReady = "true";
+
+  const questions = [
+    {
+      q:"What is Python?",
+      o:["An operating system","A programming language","Computer hardware","A web browser"],
+      a:1
+    },
+    {
+      q:"Who created Python?",
+      o:["Bill Gates","Steve Jobs","Guido van Rossum","Mark Zuckerberg"],
+      a:2
+    },
+    {
+      q:"Which function displays information on the screen?",
+      o:["input()","print()","type()","open()"],
+      a:1
+    },
+    {
+      q:"What is a variable in Python?",
+      o:["A storage location for data","A computer screen","A programming error","A web browser"],
+      a:0
+    },
+    {
+      q:"Which data type stores text?",
+      o:["int","float","str","bool"],
+      a:2
+    },
+    {
+      q:"Which symbol is used for a single-line comment?",
+      o:["//","#","@","&"],
+      a:1
+    },
+    {
+      q:"Which operator checks whether two values are equal?",
+      o:["=","+","==","!="],
+      a:2
+    },
+    {
+      q:"Which statement is used for decision-making?",
+      o:["print","if","import","return"],
+      a:1
+    },
+    {
+      q:"What is a loop in Python?",
+      o:["Repeating instructions","Deleting files","A variable","A mathematical symbol"],
+      a:0
+    },
+    {
+      q:"Which loop repeats while a condition is true?",
+      o:["if loop","while loop","class loop","return loop"],
+      a:1
+    },
+    {
+      q:"What is a function?",
+      o:["A computer virus","A reusable block of code","A hardware device","A data type"],
+      a:1
+    },
+    {
+      q:"Which structure stores key-value pairs?",
+      o:["List","Tuple","Dictionary","String"],
+      a:2
+    },
+    {
+      q:"What is the purpose of try-except?",
+      o:["Create websites","Handle errors","Print messages","Create variables"],
+      a:1
+    },
+    {
+      q:"What does OOP stand for?",
+      o:["Object-Oriented Programming","Online Operating Program","Open Output Process","Object Operating Platform"],
+      a:0
+    },
+    {
+      q:"Which library is commonly used for Python games?",
+      o:["Pandas","NumPy","Pygame","Django"],
+      a:2
+    }
+  ];
+
+  const questionsBox = root.querySelector("#python-questions");
+  const progress = root.querySelector("#python-progress");
+  const submit = root.querySelector("#python-submit");
+  const reset = root.querySelector("#python-reset");
+  const result = root.querySelector("#python-r
 
 
 
