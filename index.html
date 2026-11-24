@@ -460,6 +460,458 @@ void loop() {
 </section>
 
 
+<!-- ===================================
+     BEN LOGIC - ARDUINODROID SECTION
+==================================== -->
+
+<section id="arduinodroid" class="arduino-section">
+
+<style>
+.arduino-section {
+  background: #101827;
+  color: #ffffff;
+  padding: 45px 18px;
+  font-family: Arial, sans-serif;
+}
+
+.arduino-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.arduino-section * {
+  box-sizing: border-box;
+}
+
+.arduino-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.arduino-header h2 {
+  color: #00d5ff;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.arduino-header p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* VIDEO GALLERY */
+
+.arduino-video-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 35px 0;
+}
+
+.arduino-video-card {
+  background: #1c293c;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.arduino-video-card:hover {
+  transform: translateY(-5px);
+  border-color: #00d5ff;
+}
+
+.arduino-video-card video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 430px;
+  display: block;
+  background: #080e18;
+  object-fit: contain;
+}
+
+.arduino-video-info {
+  padding: 18px;
+}
+
+.arduino-video-info h3 {
+  color: #00d5ff;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.arduino-video-info p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* FEATURES */
+
+.arduino-features {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin: 35px 0;
+}
+
+.arduino-feature-card {
+  background: #1c293c;
+  border: 1px solid #334155;
+  padding: 22px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.arduino-feature-card:hover {
+  border-color: #00d5ff;
+}
+
+.arduino-feature-card h3 {
+  color: #00d5ff;
+  font-size: 17px;
+}
+
+.arduino-feature-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* CODE EXAMPLE */
+
+.arduino-code-box {
+  background: #080e18;
+  padding: 22px;
+  border-radius: 12px;
+  border-left: 4px solid #00d5ff;
+  margin: 25px 0;
+  overflow-x: auto;
+}
+
+.arduino-code-box pre {
+  color: #7CFC98;
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre;
+}
+
+/* DOWNLOAD */
+
+.arduino-download {
+  text-align: center;
+  background: #1c293c;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 30px 18px;
+  margin-top: 35px;
+}
+
+.arduino-download h2 {
+  color: #00d5ff;
+}
+
+.arduino-download p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.arduino-btn {
+  display: inline-block;
+  background: #00d5ff;
+  color: #101827;
+  padding: 14px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.arduino-btn:hover {
+  background: #ffffff;
+  transform: scale(1.04);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 850px) {
+  .arduino-video-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .arduino-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 550px) {
+  .arduino-video-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .arduino-features {
+    grid-template-columns: 1fr;
+  }
+
+  .arduino-header h2 {
+    font-size: 25px;
+  }
+
+  .arduino-video-card video {
+    max-height: 500px;
+  }
+}
+</style>
+
+<div class="arduino-container">
+
+  <!-- INTRODUCTION -->
+
+  <div class="arduino-header">
+
+    <h2>🤖 ArduinoDroid Coding App</h2>
+
+    <p>
+      Welcome to the ArduinoDroid learning section
+      of Ben Logic Hobby & Research Hub.
+
+      Learn how to program Arduino boards directly
+      from your Android smartphone. Explore coding,
+      electronics, robotics and practical inventions.
+    </p>
+
+  </div>
+
+
+  <!-- THREE MOBILE VIDEOS -->
+
+  <div class="arduino-header">
+
+    <h2>📱 ArduinoDroid Video Tutorials</h2>
+
+    <p>
+      Watch these three tutorials to understand
+      ArduinoDroid and how it works.
+    </p>
+
+  </div>
+
+
+  <div class="arduino-video-gallery">
+
+    <!-- VIDEO ONE -->
+
+    <div class="arduino-video-card">
+
+      <video controls playsinline preload="metadata">
+        <source src="arduino-video1.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+
+      <div class="arduino-video-info">
+
+        <h3>01. Introduction</h3>
+
+        <p>
+          Discover ArduinoDroid, its interface,
+          tools and how to start coding using
+          your smartphone.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO TWO -->
+
+    <div class="arduino-video-card">
+
+      <video controls playsinline preload="metadata">
+        <source src="arduino-video2.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+
+      <div class="arduino-video-info">
+
+        <h3>02. Arduino Coding</h3>
+
+        <p>
+          Learn how to write Arduino sketches,
+          understand basic programming commands
+          and compile your code.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO THREE -->
+
+    <div class="arduino-video-card">
+
+      <video controls playsinline preload="metadata">
+        <source src="arduino-video3.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+
+      <div class="arduino-video-info">
+
+        <h3>03. Practical Projects</h3>
+
+        <p>
+          Explore practical electronics projects
+          using Arduino boards, LEDs, sensors,
+          motors and other components.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FEATURES -->
+
+  <div class="arduino-header">
+
+    <h2>⚙️ ArduinoDroid Features</h2>
+
+    <p>
+      Important tools available when programming
+      Arduino using your Android phone.
+    </p>
+
+  </div>
+
+
+  <div class="arduino-features">
+
+    <div class="arduino-feature-card">
+
+      <h3>💻 Code Editor</h3>
+
+      <p>
+        Write, edit and organize Arduino
+        programs using a mobile code editor.
+      </p>
+
+    </div>
+
+
+    <div class="arduino-feature-card">
+
+      <h3>⚙️ Compiler</h3>
+
+      <p>
+        Compile your Arduino sketches and
+        identify programming errors.
+      </p>
+
+    </div>
+
+
+    <div class="arduino-feature-card">
+
+      <h3>🔌 Board Connection</h3>
+
+      <p>
+        Upload programs to supported Arduino
+        boards using compatible USB OTG
+        or other supported connections.
+      </p>
+
+    </div>
+
+
+    <div class="arduino-feature-card">
+
+      <h3>🤖 Project Development</h3>
+
+      <p>
+        Develop electronics, robotics,
+        automation and RC engineering projects.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- CODE EXAMPLE -->
+
+  <div class="arduino-header">
+
+    <h2>⌨️ Try Arduino Coding</h2>
+
+    <p>
+      Example: Make an LED blink every second
+      using an Arduino Uno.
+    </p>
+
+  </div>
+
+
+  <div class="arduino-code-box">
+
+<pre>
+void setup() {
+
+  pinMode(13, OUTPUT);
+
+}
+
+void loop() {
+
+  digitalWrite(13, HIGH);
+
+  delay(1000);
+
+  digitalWrite(13, LOW);
+
+  delay(1000);
+
+}
+</pre>
+
+  </div>
+
+
+  <!-- DOWNLOAD -->
+
+  <div class="arduino-download">
+
+    <h2>🚀 Start Your Coding Journey</h2>
+
+    <p>
+      Download ArduinoDroid and begin creating
+      your own Arduino electronics projects
+      using your Android smartphone.
+    </p>
+
+    <a
+      href="https://play.google.com/store/apps/details?id=name.antonsmirnov.android.arduinodroid2"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="arduino-btn">
+
+      Download ArduinoDroid
+
+    </a>
+
+  </div>
+
+</div>
+
+</section>
+
+<!-- END OF ARDUINODROID SECTION -->
+  
 
 <section id="web">
 <h2>Web Development - How Websites Are Made</h2>
